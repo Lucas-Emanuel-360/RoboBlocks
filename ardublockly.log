@@ -3782,3 +3782,61 @@ Launch Server:
 2024-08-02T20:57:38.817Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
 2024-08-02T21:09:11.682Z - info: [ServerMgr] Server stopped.
 2024-08-02T21:09:11.697Z - info: [ArdublocklySrv] Process exited with code null
+2024-08-02T21:30:59.232Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-08-02T21:30:59.233Z - info: [ArdublocklyElec] Ardublockly root dir: D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks
+2024-08-02T21:30:59.233Z - info: [ArdublocklyElec] OS detected: win32
+2024-08-02T21:30:59.304Z - info: [ServerMgr] Command: D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-08-02T21:30:59.899Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.19041-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks
+Current working directory set to:
+	D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks
+Selected server root:
+	D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks\ServerCompilerSettings.ini
+The provided compiler path in the settings file is not valid:
+	None
+Default compiler path set:
+	None
+Final settings loaded:
+	Compiler directory: None
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM1
+	Sketch Name: DB4KSketch
+	Sketch Directory: D:\Projeto\mymaker\DB4K
+	Load IDE option: upload
+Settings file saved to:
+	D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	D:\Projeto\mymaker\DB4K RAFAEL\Intocado\DB4K-SA\DB4K-SA\RoboBlocks
+Launch Server:
+
+2024-08-02T21:31:01.500Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.501Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.501Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.502Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.502Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.503Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.503Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.504Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.504Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-08-02T21:31:01.695Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-08-02T21:31:01.697Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-08-02T21:31:04.059Z - info: [ServerMgr] Server stopped.

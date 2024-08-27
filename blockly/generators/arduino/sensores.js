@@ -253,38 +253,29 @@ Blockly.Arduino['bluetooth_connect'] = function(block) {
 //*************************************************************************
 //Sensor Distância
 //*************************************************************************
-
 function codigo_verifica_distancia() {
-    var comando_verifica_distancia = 
-        'digitalWrite(pino_ultrasonic_envio_sinal, LOW);\n' +
-        'delayMicroseconds(2);\n' +
-        'digitalWrite(pino_ultrasonic_envio_sinal, HIGH);\n' +
-        'delayMicroseconds(10);\n' +
-        'digitalWrite(pino_ultrasonic_envio_sinal, LOW);\n' +
-        'long duration = pulseIn(pino_ultrasonic_echo, HIGH);\n' +
-        'int distance = duration * 0.034 / 2;\n' +
-        'return distance;';
-
     var codigo = 
-        'int distancia = 0;\n' +
-        'for (int i = 0; i < 10; ++i) {\n' +
-        '  distancia = ' + comando_verifica_distancia + ' + distancia;\n' +
-        '}\n' +
-        'distancia = distancia / 10;\n' +
-        'return distancia;\n';
-
-    return codigo;
+        'digitalWrite(' + pino_ultrasonic_envio_sinal + ', LOW);\n' +
+        'delayMicroseconds(2);\n' +
+        'digitalWrite(' + pino_ultrasonic_envio_sinal + ', HIGH);\n' +
+        'delayMicroseconds(10);\n' +
+        'digitalWrite(' + pino_ultrasonic_envio_sinal + ', LOW);\n' +
+        'unsigned long duration = pulseIn(' + pino_ultrasonic_echo + ', HIGH);\n' +
+        'int distance = duration * 0.034 / 2;\n' +
+        'return distance;\n';
+    return codigo;  
 }
 
 Blockly.Arduino['sensor_distancia'] = function(block) {
     var dropdown_operador = block.getFieldValue('operador');
     var text_distancia = block.getFieldValue('distancia');
-
+    
     var nome_variavel_echo = 'pino_echo';
     var nome_variavel_envio_sinal = 'pino_sinal';
-
+    
     var nome_funcao = 'verifica_distancia';
-    var func = ['\n' + 'int ' + Blockly.Arduino.DEF_FUNC_NAME + '()\n{\n' + codigo_verifica_distancia() + '}\n'];
+    var func = ['\n'+'int ' + Blockly.Arduino.DEF_FUNC_NAME + '()\n{\n' +
+    codigo_verifica_distancia() + '}\n']; 
     var funcName = Blockly.Arduino.addFunction(nome_funcao, func.join('\n'));
 
     var OPERATORS = {
@@ -292,27 +283,28 @@ Blockly.Arduino['sensor_distancia'] = function(block) {
         'menor': '<',
         'maior': '>',
     };
-
+    
     var tipo_operador = OPERATORS[block.getFieldValue('operador')];
 
     // Definitions
-    Blockly.Arduino.definitions_['pino_ultrasonic_envio_sinal'] = 'int pino_ultrasonic_envio_sinal = ' + pino_ultrasonic_envio_sinal + ';';
-    Blockly.Arduino.definitions_['pino_ultrasonic_echo'] = 'int pino_ultrasonic_echo = ' + pino_ultrasonic_echo + ';';
+    Blockly.Arduino.definitions_['pino_ultrasonic_envio_sinal'] = 'const int pino_ultrasonic_envio_sinal = ' + pino_ultrasonic_envio_sinal + ';';
+    Blockly.Arduino.definitions_['pino_ultrasonic_echo'] = 'const int pino_ultrasonic_echo = ' + pino_ultrasonic_echo + ';';
 
-    // Reserve Pins
-    Blockly.Arduino.reservePin(block, pino_ultrasonic_echo, Blockly.Arduino.PinTypes.INPUT, 'Digital Read');
-    Blockly.Arduino.reservePin(block, pino_ultrasonic_envio_sinal, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-
+    // Reserve Pins  
+    Blockly.Arduino.reservePin(
+        block, pino_ultrasonic_echo, Blockly.Arduino.PinTypes.INPUT, 'Digital Read');
+    Blockly.Arduino.reservePin(
+        block, pino_ultrasonic_envio_sinal, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+    
     // Setup
-    var pinSetupCode_echo = 'pinMode(' + "pino_ultrasonic_echo" + ', INPUT);';
-    var pinSetupCode_envio_sinal = 'pinMode(' + "pino_ultrasonic_envio_sinal" + ', OUTPUT);';
-    Blockly.Arduino.addSetup('io_' + "pino_ultrasonic_echo", pinSetupCode_echo, false);
-    Blockly.Arduino.addSetup('io_' + "pino_ultrasonic_envio_sinal", pinSetupCode_envio_sinal, false);
+    var pinSetupCode_echo = 'pinMode(' + pino_ultrasonic_echo + ', INPUT);';
+    var pinSetupCode_envio_sinal = 'pinMode(' + pino_ultrasonic_envio_sinal + ', OUTPUT);';
+    Blockly.Arduino.addSetup('io_' + pino_ultrasonic_echo, pinSetupCode_echo, false);
+    Blockly.Arduino.addSetup('io_' + pino_ultrasonic_envio_sinal, pinSetupCode_envio_sinal, false);
 
     var code = '(' + funcName + '() ' + tipo_operador + ' ' + text_distancia + ' )';
     return [code, Blockly.Arduino.ORDER_CONDITIONAL];
 };
-
 
 //*****************************************************************
 //SENSOR SEGUIDOR DE LINHA

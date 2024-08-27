@@ -15,12 +15,14 @@ Ardublockly.TOOLBOX_XML =
 '<xml>'+
 '  <sep></sep>' +
 '  <category name="Controle">' +
+'       <block type="monitor_serial"></block> ' +  
 '  		<block type="delay"></block>' +
 '		<block type="repetir"></block>' +
 '		<block type="enquanto"></block>' +
 '	    <block type="condicional_simples"></block>' +
 '	    <block type="condicional_completo"></block>' +
 '		<block type="parar_repeticao_do_programa"></block>' +
+'       <block type="monitor_serial"></block> ' +                                
 ' </category>' +
 '  <sep_strong></sep_strong>' +
 '    <category name="LED">' +

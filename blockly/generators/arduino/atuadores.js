@@ -45,10 +45,6 @@ var pinoLedVerde = DB4K_pino_LED_verde;
 var pinoLedVermelho2 = DB4K_pino_LED_vermelho2;
 var pinoLedAmarelo2 = DB4K_pino_LED_amarelo2;
 var pinoLedVerde2 = DB4K_pino_LED_verde2;
-var pinoLedVermelhoS = DB4K_pino_LED_vermelhoS;
-var pinoLedAmareloS = DB4K_pino_LED_amareloS;
-var pinoLedVerdeS = DB4K_pino_LED_verdeS;
-
 
 //Define velocidade da piscada do LED
 var velocidade_baixa_blink=DB4K_velocidade_baixa_blink;
@@ -111,107 +107,60 @@ var tempo_sirene=10;
 //*******************************************************
 
 
-
 Blockly.Arduino['acender_led'] = function(block) {
-  var colour_cor_led = block.getFieldValue('cor_led');
-  var dropdown_porta_led = block.getFieldValue('porta_led');
-//Troca o Valor Hexadecimal da Cor pelo "pino" Referente à cor
-	switch(colour_cor_led) {
-		case '#ff0000':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_vermelho";
-					var pinLed = pinoLedVermelho;
-					Blockly.Arduino.definitions_['pino_led_vermelho'] ='int pino_led_vermelho= '+ pinoLedVermelho +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_vermelho2";
-					var pinLed = pinoLedVermelho2;
-					Blockly.Arduino.definitions_['pino_led_vermelho2'] ='int pino_led_vermelho2= '+ pinoLedVermelho2 +';'
-					break;
-			}
-			break;
-		case '#00ff00':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_verde";
-					var pinLed = pinoLedVerde;
-					Blockly.Arduino.definitions_['pino_led_verde'] ='int pino_led_verde= '+ pinoLedVerde +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_verde2";
-					var pinLed = pinoLedVerde2;
-					Blockly.Arduino.definitions_['pino_led_verde2'] ='int pino_led_verde2= '+ pinoLedVerde2 +';'
-					break;
-			}
-			break;
-		case '#0000ff':
-			var pinKey = "pino_led_azul";
-			var pinLed = pinoLedAzul;
-			Blockly.Arduino.definitions_['pino_led_azul'] ='int pino_led_azul= '+ pinoLedAzul +';'
-			break;		
-		case '#ffff00':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_amarelo";
-					var pinLed = pinoLedAmarelo;
-					Blockly.Arduino.definitions_['pino_led_amarelo'] ='int pino_led_amarelo= '+ pinoLedAmarelo +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_amarelo2";
-					var pinLed = pinoLedAmarelo2;
-					Blockly.Arduino.definitions_['pino_led_amarelo2'] ='int pino_led_amarelo2= '+ pinoLedAmarelo2 +';'
-					break;
-			}
-			break;		
-	}
-  // TODO: Assemble Arduino into code variable.
-  var stateOutput = 'HIGH';
-
-  Blockly.Arduino.reservePin(
-      block, pinLed, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-	  
-  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
-  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
-
-  var code = 'digitalWrite(' + pinKey + ',' + stateOutput + ');\n';
-  return code;
- 
-};
-
-Blockly.Arduino['acender_ledS'] = function(block) {
 	var colour_cor_led = block.getFieldValue('cor_led');
-  //Troca o Valor Hexadecimal da Cor pelo "pino" Referente à cor
-	  switch(colour_cor_led) {
-		  case '#ff0000':
-					  var pinKey = "pino_led_vermelho";
-					  var pinLed = pinoLedVermelhoS;
-					  Blockly.Arduino.definitions_['pino_led_vermelho'] ='int pino_led_vermelho= '+ pinoLedVermelhoS +';'
-					  break;
-		  case '#00ff00':
-					  var pinKey = "pino_led_verde";
-					  var pinLed = pinoLedVerdeS;
-					  Blockly.Arduino.definitions_['pino_led_verde'] ='int pino_led_verde= '+ pinoLedVerdeS +';'
-					  break;	
-		  case '#ffff00':
-					  var pinKey = "pino_led_amarelo";
-					  var pinLed = pinoLedAmareloS;
-					  Blockly.Arduino.definitions_['pino_led_amarelo'] ='int pino_led_amarelo= '+ pinoLedAmareloS +';'
-					  break;
-			  break;		
-	  }
-	// TODO: Assemble Arduino into code variable.
-	var stateOutput = 'HIGH';
+	var dropdown_porta_led = block.getFieldValue('porta_led');
+	var porta = block.getFieldValue('led_variable'); // Obtém o valor da porta do campo de texto
   
-	Blockly.Arduino.reservePin(
-		block, pinLed, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-		
-	var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
-	Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+	var pinKey;
+	var pinLed = porta;
   
-	var code = 'digitalWrite(' + pinKey + ',' + stateOutput + ');\n';
+	// Troca o Valor Hexadecimal da Cor pelo "pino" referente à cor
+	switch(colour_cor_led) {
+	  case '#ff0000': // Vermelho
+		if (dropdown_porta_led === '1') {
+		  pinKey = "pino_led_vermelho";
+		  pinLed;
+		} else if (dropdown_porta_led === '2') {
+		  pinKey = "pino_led_vermelho2";
+		  pinLed;
+		}
+		break;
+	  case '#00ff00': // Verde
+		if (dropdown_porta_led === '1') {
+		  pinKey = "pino_led_verde";
+		  pinLed;
+		} else if (dropdown_porta_led === '2') {
+		  pinKey = "pino_led_verde2";
+		  pinLed;
+		}
+		break;
+	  case '#ffff00': // Amarelo
+		if (dropdown_porta_led === '1') {
+		  pinKey = "pino_led_amarelo";
+		  pinLed;
+		} else if (dropdown_porta_led === '2') {
+		  pinKey = "pino_led_amarelo2";
+		  pinLed;
+		}
+		break;
+	  // Adicione outros casos de cores conforme necessário
+	  default:
+		pinKey = "pino_led_desconhecido";
+		pinLed = -1; // Valor inválido
+	}
+  
+	// Geração das definições e setup para o Arduino
+	if (pinLed !== -1) {
+	  Blockly.Arduino.definitions_[pinKey] = 'int ' + pinKey + ' = ' + pinLed + ';';
+	  Blockly.Arduino.addSetup('io_' + pinKey, 'pinMode(' + pinKey + ', OUTPUT);', false);
+	}
+  
+	var code = '';
+	if (pinLed !== -1) {
+	  code = 'digitalWrite(' + pinKey + ', HIGH);\n';
+	}
 	return code;
-   
   };
 
 
@@ -220,258 +169,140 @@ Blockly.Arduino['acender_ledS'] = function(block) {
 //*******************************************************
 
 Blockly.Arduino['apagar_led'] = function(block) {
-  var colour_cor_led = block.getFieldValue('cor_led');
-  var dropdown_porta_led = block.getFieldValue('porta_led');
-//Troca o Valor Hexadecimal da Cor pelo "pino" Referente à cor
-	switch(colour_cor_led) {
-		case '#ff0000':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_vermelho";
-					var pinLed = pinoLedVermelho;
-					Blockly.Arduino.definitions_['pino_led_vermelho'] ='int pino_led_vermelho= '+ pinoLedVermelho +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_vermelho2";
-					var pinLed = pinoLedVermelho2;
-					Blockly.Arduino.definitions_['pino_led_vermelho2'] ='int pino_led_vermelho2= '+ pinoLedVermelho2 +';'
-					break;
-			}
-			break;
-		case '#00ff00':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_verde";
-					var pinLed = pinoLedVerde;
-					Blockly.Arduino.definitions_['pino_led_verde'] ='int pino_led_verde= '+ pinoLedVerde +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_verde2";
-					var pinLed = pinoLedVerde2;
-					Blockly.Arduino.definitions_['pino_led_verde2'] ='int pino_led_verde2= '+ pinoLedVerde2 +';'
-					break;
-			}
-			break;
-		case '#0000ff':
-			var pinKey = "pino_led_azul";
-			var pinLed = pinoLedAzul;
-			Blockly.Arduino.definitions_['pino_led_azul'] ='int pino_led_azul= '+ pinoLedAzul +';'
-			break;		
-		case '#ffff00':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_amarelo";
-					var pinLed = pinoLedAmarelo;
-					Blockly.Arduino.definitions_['pino_led_amarelo'] ='int pino_led_amarelo= '+ pinoLedAmarelo +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_amarelo2";
-					var pinLed = pinoLedAmarelo2;
-					Blockly.Arduino.definitions_['pino_led_amarelo2'] ='int pino_led_amarelo2= '+ pinoLedAmarelo2 +';'
-					break;
-			}
-			break;		
-	}
-  // TODO: Assemble Arduino into code variable.
-  var stateOutput = 'LOW';
-
-  Blockly.Arduino.reservePin(
-      block, pinLed, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-
-  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
-  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
-
-  var code = 'digitalWrite(' + pinKey + ',' + stateOutput + ');\n';
-  return code;
-};
-
-Blockly.Arduino['apagar_ledS'] = function(block) {
 	var colour_cor_led = block.getFieldValue('cor_led');
+	var dropdown_porta_led = block.getFieldValue('porta_led');
+	var porta = block.getFieldValue('led_variable'); // Obtém o valor da porta do campo de texto
 
-  //Troca o Valor Hexadecimal da Cor pelo "pino" Referente à cor
-	  switch(colour_cor_led) {
-		  case '#ff0000':
-					  var pinKey = "pino_led_vermelho";
-					  var pinLed = pinoLedVermelhoS;
-					  Blockly.Arduino.definitions_['pino_led_vermelho'] ='int pino_led_vermelho= '+ pinoLedVermelhoS +';'
-					  break;
+	var pinKey;
+	var pinLed = porta;
 
-		  case '#00ff00':
+	// Troca o Valor Hexadecimal da Cor pelo "pino" referente à cor
+	switch(colour_cor_led) {
+		case '#ff0000': // Vermelho
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_vermelho";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_vermelho2";
+				pinLed;
+			}
+			break;
+		case '#00ff00': // Verde
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_verde";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_verde2";
+				pinLed;
+			}
+			break;
+		case '#ffff00': // Amarelo
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_amarelo";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_amarelo2";
+				pinLed;
+			}
+			break;
+		// Adicione outros casos de cores conforme necessário
+		default:
+			pinKey = "pino_led_desconhecido";
+			pinLed = -1; // Valor inválido
+	}
 
-					  var pinKey = "pino_led_verde";
-					  var pinLed = pinoLedVerdeS;
-					  Blockly.Arduino.definitions_['pino_led_verde'] ='int pino_led_verde= '+ pinoLedVerdeS +';'
-					  break;
-	
-		  case '#ffff00':
-					  var pinKey = "pino_led_amarelo";
-					  var pinLed = pinoLedAmareloS;
-					  Blockly.Arduino.definitions_['pino_led_amarelo'] ='int pino_led_amarelo= '+ pinoLedAmareloS +';'
-					  break;
+	// Geração das definições e setup para o Arduino
+	if (pinLed !== -1) {
+		Blockly.Arduino.definitions_[pinKey] = 'int ' + pinKey + ' = ' + pinLed + ';';
+		Blockly.Arduino.addSetup('io_' + pinKey, 'pinMode(' + pinKey + ', OUTPUT);', false);
+	}
 
-	  }
-	// TODO: Assemble Arduino into code variable.
-	var stateOutput = 'LOW';
-  
-	Blockly.Arduino.reservePin(
-		block, pinLed, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-  
-	var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
-	Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
-  
-	var code = 'digitalWrite(' + pinKey + ',' + stateOutput + ');\n';
+	var code = '';
+	if (pinLed !== -1) {
+		code = 'digitalWrite(' + pinKey + ', LOW);\n';
+	}
 	return code;
-  };
-  
+};
 
 
 //*******************************************************
 //Pisca LED
 //*******************************************************
-
 Blockly.Arduino['piscar_led'] = function(block) {
-  var colour_cor_led = block.getFieldValue('cor_led');
-  var dropdown_porta_led = block.getFieldValue('porta_led');
-  var dropdown_velocidade_blink = block.getFieldValue('velocidade_blink');
-  
-//Troca o Valor Hexadecimal da Cor pelo "pino" Referente à cor
+	var colour_cor_led = block.getFieldValue('cor_led');
+	var dropdown_porta_led = block.getFieldValue('porta_led');
+	var dropdown_velocidade_blink = block.getFieldValue('velocidade_blink');
+	var porta = block.getFieldValue('led_variable'); // Obtém o valor da porta do campo de texto
+
+	var pinKey;
+	var pinLed = porta;
+	var velocidade_blink;
+
+	// Troca o Valor Hexadecimal da Cor pelo "pino" referente à cor
 	switch(colour_cor_led) {
-		case '#ff0000':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_vermelho";
-					var pinLed = pinoLedVermelho;
-					Blockly.Arduino.definitions_['pino_led_vermelho'] ='int pino_led_vermelho= '+ pinoLedVermelho +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_vermelho2";
-					var pinLed = pinoLedVermelho2;
-					Blockly.Arduino.definitions_['pino_led_vermelho2'] ='int pino_led_vermelho2= '+ pinoLedVermelho2 +';'
-					break;
+		case '#ff0000': // Vermelho
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_vermelho";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_vermelho2";
+				pinLed;
 			}
 			break;
-		case '#00ff00':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_verde";
-					var pinLed = pinoLedVerde;
-					Blockly.Arduino.definitions_['pino_led_verde'] ='int pino_led_verde= '+ pinoLedVerde +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_verde2";
-					var pinLed = pinoLedVerde2;
-					Blockly.Arduino.definitions_['pino_led_verde2'] ='int pino_led_verde2= '+ pinoLedVerde2 +';'
-					break;
+		case '#00ff00': // Verde
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_verde";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_verde2";
+				pinLed;
 			}
 			break;
-		case '#0000ff':
-			var pinKey = "pino_led_azul";
-			var pinLed = pinoLedAzul;
-			Blockly.Arduino.definitions_['pino_led_azul'] ='int pino_led_azul= '+ pinoLedAzul +';'
-			break;		
-		case '#ffff00':
-			switch(dropdown_porta_led){
-				case '1':
-					var pinKey = "pino_led_amarelo";
-					var pinLed = pinoLedAmarelo;
-					Blockly.Arduino.definitions_['pino_led_amarelo'] ='int pino_led_amarelo= '+ pinoLedAmarelo +';'
-					break;
-				case '2':
-					var pinKey = "pino_led_amarelo2";
-					var pinLed = pinoLedAmarelo2;
-					Blockly.Arduino.definitions_['pino_led_amarelo2'] ='int pino_led_amarelo2= '+ pinoLedAmarelo2 +';'
-					break;
+		case '#ffff00': // Amarelo
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_amarelo";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_amarelo2";
+				pinLed;
 			}
-			break;		
+			break;
+		// Adicione outros casos de cores conforme necessário
+		default:
+			pinKey = "pino_led_desconhecido";
+			pinLed = -1; // Valor inválido
 	}
-	
-	  switch(dropdown_velocidade_blink) {
+
+	// Seleção da velocidade do piscar
+	switch(dropdown_velocidade_blink) {
 		case 'low':
-			var velocidade_blink = velocidade_baixa_blink;
+			velocidade_blink = 1000; // Velocidade baixa (em milissegundos)
 			break;
 		case 'middle':
-			var velocidade_blink = velocidade_media_blink
+			velocidade_blink = 500; // Velocidade média
 			break;
 		case 'high':
-			var velocidade_blink = velocidade_alta_blink;
+			velocidade_blink = 250; // Velocidade alta
 			break;	
-    }
-  var value_num = velocidade_blink;
-  // TODO: Assemble Arduino into code variable.
+		default:
+			velocidade_blink = 500; // Valor padrão para a velocidade
+	}
 
-  Blockly.Arduino.reservePin(
-      block, pinLed, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-	  
-  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
-  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+	// Geração das definições e setup para o Arduino
+	if (pinLed !== -1) {
+		Blockly.Arduino.definitions_[pinKey] = 'int ' + pinKey + ' = ' + pinLed + ';';
+		Blockly.Arduino.addSetup('io_' + pinKey, 'pinMode(' + pinKey + ', OUTPUT);', false);
+	}
 
-  var code = 'digitalWrite(' + pinKey + ',HIGH);\n'
-           + 'delay(' + value_num + ');\n'
-		   + 'digitalWrite(' + pinKey + ',LOW);\n'
-		   + 'delay(' + value_num + ');\n';
-  return code;
- 
-};
-
-Blockly.Arduino['piscar_ledS'] = function(block) {
-	var colour_cor_led = block.getFieldValue('cor_led');
-	var dropdown_velocidade_blink = block.getFieldValue('velocidade_blink');
-	
-  //Troca o Valor Hexadecimal da Cor pelo "pino" Referente à cor
-	  switch(colour_cor_led) {
-		  case '#ff0000':
-					  var pinKey = "pino_led_vermelho";
-					  var pinLed = pinoLedVermelhoS;
-					  Blockly.Arduino.definitions_['pino_led_vermelho'] ='int pino_led_vermelho= '+ pinoLedVermelhoS +';'
-					  break;
-
-		  case '#00ff00':
-	
-					  var pinKey = "pino_led_verde";
-					  var pinLed = pinoLedVerdeS;
-					  Blockly.Arduino.definitions_['pino_led_verde'] ='int pino_led_verde= '+ pinoLedVerdeS +';'
-					  break;
-
-		  case '#ffff00':
-					  var pinKey = "pino_led_amarelo";
-					  var pinLed = pinoLedAmareloS;
-					  Blockly.Arduino.definitions_['pino_led_amarelo'] ='int pino_led_amarelo= '+ pinoLedAmareloS +';'
-					  break;
-
-
-	  }
-	  
-		switch(dropdown_velocidade_blink) {
-		  case 'low':
-			  var velocidade_blink = velocidade_baixa_blink;
-			  break;
-		  case 'middle':
-			  var velocidade_blink = velocidade_media_blink
-			  break;
-		  case 'high':
-			  var velocidade_blink = velocidade_alta_blink;
-			  break;	
-	  }
-	var value_num = velocidade_blink;
-	// TODO: Assemble Arduino into code variable.
-  
-	Blockly.Arduino.reservePin(
-		block, pinLed, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
-		
-	var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
-	Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
-  
-	var code = 'digitalWrite(' + pinKey + ',HIGH);\n'
-			 + 'delay(' + value_num + ');\n'
-			 + 'digitalWrite(' + pinKey + ',LOW);\n'
-			 + 'delay(' + value_num + ');\n';
+	var code = '';
+	if (pinLed !== -1) {
+		code = 'digitalWrite(' + pinKey + ', HIGH);\n' +
+		       'delay(' + velocidade_blink + ');\n' +
+		       'digitalWrite(' + pinKey + ', LOW);\n' +
+		       'delay(' + velocidade_blink + ');\n';
+	}
 	return code;
-   
-  };
-
-
-
-
+};
 
 
 //*******************************************************
@@ -480,9 +311,10 @@ Blockly.Arduino['piscar_ledS'] = function(block) {
 
 Blockly.Arduino['girar_motor'] = function(block) {
   var dropdown_velocidade_motor = block.getFieldValue('velocidade_motor');
-  var pinKey = "pino_motor_DC";
+  var porta = block.getFieldValue('pino');
+  var pinKey = porta;
   
-  Blockly.Arduino.definitions_['pino_motor_DC'] ='int pino_motor_DC = '+ pinoMotorDC +';'
+  Blockly.Arduino.definitions_['pino_motor_DC'] ='int pino_motor_DC = '+ pinKey +';'
   
   switch(dropdown_velocidade_motor) {
 		case 'low':
@@ -518,9 +350,10 @@ Blockly.Arduino['girar_motor'] = function(block) {
 
 Blockly.Arduino['parar_motor'] = function(block) {
   // TODO: Assemble Arduino into code variable.
-  var pinKey = "pino_motor_DC";
+  var porta = block.getFieldValue('pino');
+  var pinKey = porta;
   var value_num = '0';
-  Blockly.Arduino.definitions_['pino_motor_DC'] ='int pino_motor_DC = '+ pinoMotorDC +';'
+  Blockly.Arduino.definitions_['pino_motor_DC'] ='int pino_motor_DC = '+ pinKey +';'
   
   Blockly.Arduino.reservePin(
       block, pinoMotorDC, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
@@ -539,12 +372,13 @@ Blockly.Arduino['parar_motor'] = function(block) {
 //*******************************************************
 
 Blockly.Arduino['mover_servomotor'] = function(block) {
-  var pinKey = "pino_servo_motor";
+	var porta = block.getFieldValue('pino');
+  var pinKey = porta;
   var dropdown_posicao_ponteiro_servo = block.getFieldValue('posicao_ponteiro_servo');
   var angulo = dropdown_posicao_ponteiro_servo;
   var servoName = 'meu_Servo'
   
-  Blockly.Arduino.definitions_['pino_servo_motor'] ='int pino_servo_motor = '+ pinoServoMotor +';'
+  Blockly.Arduino.definitions_['pino_servo_motor'] ='int pino_servo_motor = '+ pinKey +';'
   
   Blockly.Arduino.reservePin(
       block, pinoServoMotor, Blockly.Arduino.PinTypes.SERVO, 'Servo Write');
@@ -568,46 +402,43 @@ Blockly.Arduino['mover_servomotor'] = function(block) {
 //******************************************************* 
 
 Blockly.Arduino['escrever_lcd'] = function(block) {
-  var texto = block.getFieldValue('texto');
-  var numero_linha = block.getFieldValue('numero_linha');
-  var lcdName = nomeLCD;
- 
-  // TODO: Assemble Arduino into code variable.
-
-  
-  switch(numero_linha) {
-	case '1':
-		var posicao_cursor = lcdName + '.setCursor(0,0);\n';
-		break;
-	case '2':
-		var posicao_cursor = lcdName + '.setCursor(0,1);\n';
-		break;		
-  } 
+	var texto = block.getFieldValue('value_texto'); // Correção aqui
+	var numero_linha = block.getFieldValue('numero_linha');
+	var lcdName = nomeLCD;
    
-  Blockly.Arduino.addInclude('lcd', '#include <LiquidCrystal.h>');
-  
-  Blockly.Arduino.definitions_['lcd_pino_rs'] ='int lcd_pino_rs = '+ pino_rs +';'
-  Blockly.Arduino.definitions_['lcd_pino_rw'] ='int lcd_pino_rw = '+ pino_rw +';'
-  Blockly.Arduino.definitions_['lcd_pino_enable'] ='int lcd_pino_enable = '+ pino_enable +';'  
-  Blockly.Arduino.definitions_['lcd_pino_dados_4'] ='int lcd_pino_dados_4 = '+ pino_dados_4 +';'  
-  Blockly.Arduino.definitions_['lcd_pino_dados_5'] ='int lcd_pino_dados_5 = '+ pino_dados_5 +';'  
-  Blockly.Arduino.definitions_['lcd_pino_dados_6'] ='int lcd_pino_dados_6 = '+ pino_dados_6 +';'  
-  Blockly.Arduino.definitions_['lcd_pino_dados_7'] ='int lcd_pino_dados_7 = '+ pino_dados_7 +';'  
-  
-  Blockly.Arduino.addDeclaration('lcd','LiquidCrystal ' + lcdName + '(' 
-  + "lcd_pino_rs" + ',' + "lcd_pino_rw" + ',' + "lcd_pino_enable" + ',' + "lcd_pino_dados_4" + ',' + "lcd_pino_dados_5" + ',' + "lcd_pino_dados_6" + ',' + "lcd_pino_dados_7" +
-  ');');
-  
-  var SetupCode1 = nomeSerial + '.begin(' + velocidadeSerial + ');';
-  var SetupCode2 = lcdName + '.begin(' + tamanho_linha_lcd + ',' + numero_linhas_lcd +');'; 
-  Blockly.Arduino.addSetup('lcd',SetupCode1, true);
-  Blockly.Arduino.addSetup('lcd',SetupCode2, true);
-  
-
-  var code = posicao_cursor + lcdName + '.print("' + texto + '");\n';
-  return code;
-  
-};
+	// TODO: Assemble Arduino into code variable.
+	var posicao_cursor = '';
+	switch(numero_linha) {
+	  case '1':
+		posicao_cursor = lcdName + '.setCursor(0,0);\n';
+		break;
+	  case '2':
+		posicao_cursor = lcdName + '.setCursor(0,1);\n';
+		break;        
+	} 
+	 
+	Blockly.Arduino.addInclude('lcd', '#include <LiquidCrystal.h>');
+	
+	Blockly.Arduino.definitions_['lcd_pino_rs'] ='int lcd_pino_rs = '+ pino_rs +';';
+	Blockly.Arduino.definitions_['lcd_pino_rw'] ='int lcd_pino_rw = '+ pino_rw +';';
+	Blockly.Arduino.definitions_['lcd_pino_enable'] ='int lcd_pino_enable = '+ pino_enable +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_4'] ='int lcd_pino_dados_4 = '+ pino_dados_4 +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_5'] ='int lcd_pino_dados_5 = '+ pino_dados_5 +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_6'] ='int lcd_pino_dados_6 = '+ pino_dados_6 +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_7'] ='int lcd_pino_dados_7 = '+ pino_dados_7 +';';  
+	
+	Blockly.Arduino.addDeclaration('lcd','LiquidCrystal ' + lcdName + '(' 
+	+ "lcd_pino_rs" + ',' + "lcd_pino_rw" + ',' + "lcd_pino_enable" + ',' + "lcd_pino_dados_4" + ',' + "lcd_pino_dados_5" + ',' + "lcd_pino_dados_6" + ',' + "lcd_pino_dados_7" +
+	');');
+	
+	var SetupCode1 = nomeSerial + '.begin(' + velocidadeSerial + ');';
+	var SetupCode2 = lcdName + '.begin(' + tamanho_linha_lcd + ',' + numero_linhas_lcd +');'; 
+	Blockly.Arduino.addSetup('lcd',SetupCode1, true);
+	Blockly.Arduino.addSetup('lcd',SetupCode2, true);
+	
+	var code = posicao_cursor + lcdName + '.print("' + texto + '");\n';
+	return code;
+  };
 
 
 //*******************************************************
@@ -1177,10 +1008,11 @@ Blockly.Arduino['tocar_nota_buzzer'] = function(block) {
   var nota_musical = block.getFieldValue('nota_musical');
   var altura = block.getFieldValue('altura'); 
   var acidente = block.getFieldValue('acidente'); 
+  var porta = block.getFieldValue('pino');
   
-  var pinKey = "pino_buzzer";
+  var pinKey = porta;
  
-  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pino_buzzer +';' 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pinKey +';' 
   
   Blockly.Arduino.reservePin(
       block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
@@ -1197,9 +1029,11 @@ Blockly.Arduino['tocar_nota_buzzer'] = function(block) {
 
 Blockly.Arduino['parar_som_buzzer'] = function(block) {
   
-  var pinKey = "pino_buzzer";
+	var porta = block.getFieldValue('pino');
+  
+	var pinKey = porta;
  
-  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pino_buzzer +';' 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pinKey +';' 
   
   Blockly.Arduino.reservePin(
       block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
@@ -1217,9 +1051,11 @@ Blockly.Arduino['parar_som_buzzer'] = function(block) {
 //*******************************************************
 Blockly.Arduino['tocar_sirene_buzzer'] = function(block) {
   var velocidade = block.getFieldValue('velocidade');
-  var pinKey = "pino_buzzer";
+  var porta = block.getFieldValue('pino');
+  
+  var pinKey = porta;
  
-  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pino_buzzer +';' 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pinKey +';' 
   
   Blockly.Arduino.reservePin(
       block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');

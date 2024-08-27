@@ -27,9 +27,96 @@
 goog.provide('Blockly.Arduino.controles');
 goog.require('Blockly.Arduino');
 
+var DB4K_tipo_biblioteca_ultrassonico=1;
+//'1' para biblio antiga (ultrasonic.Ranging(CM))e 
+//'2' para a biblio nova (ultrasonic.read())
+var DB4K_pino_ultrasonic_echo=7;
+var DB4K_pino_ultrasonic_envio_sinal=6;
+var DB4K_ultrasonic_delay_leitura=100;
+
+//SENSOR_TEMPERATURA
+var DB4K_pino_analogico_sensor_temperatura='A0';
+var DB4K_valor_margem_temperatura_alta = 3;
+var DB4K_valor_margem_temperatura_baixa = 3;
+
+
+//SENSOR_LUZ
+var DB4K_pino_analogico_LDR_luz='A1';
+var DB4K_valor_margem_luz_alta = 70;
+var DB4K_valor_margem_luz_baixa = 90;
+
+//SENSOR_REFLETANCIA
+var DB4K_pino_analogico_sensor_linha_direito='A2';
+var DB4K_pino_analogico_sensor_linha_esquerdo='A3';
+var DB4K_pino_analogico_sensor_linha_centro='A4';
+var DB4K_valor_margem_refletancia_baixa = 100;
+var DB4K_valor_margem_refletancia_alta = 100;
+var DB4K_valor_margem_refletancia_media_inicio = 100;
+var DB4K_valor_margem_refletancia_media_fim = 600;
+
+
+//POTENCIOMETRO
+var DB4K_pino_analogico_potenciometro = 'A5';
+var DB4K_med_val_potenciometro_sup = 700;
+var DB4K_med_val_potenciometro_inf = 300;
+
+//SENSOR DE TOQUE
+var DB4K_pino_sensor_toque = 15;
+var DB4K_pino_sensor_toque1 = 16;
+var DB4K_pino_sensor_toque2 = 14;
+var DB4K_pino_sensor_toque3 = 17;
 //--------------------------------------------
 //Generators included by RLQ - DB4K
 //--------------------------------------------
+
+Blockly.Arduino['monitor_serial'] = function(block) {
+  var sensor = block.getFieldValue('sensor');
+  var codigo_sensor;
+  var pino;
+
+  switch(sensor) {
+    case 'sensor_luz':
+      pino = 'DB4K_pino_analogico_LDR_luz'; // Atualizado para a variável correta
+      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
+      codigo_sensor += 'Serial.print("Luz: ");\n';
+      codigo_sensor += 'Serial.println(valor);\n';
+      break;
+    case 'sensor_temperatura':
+      pino = 'DB4K_pino_analogico_sensor_temperatura'; // Atualizado para a variável correta
+      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
+      codigo_sensor += 'Serial.print("Temperatura: ");\n';
+      codigo_sensor += 'Serial.println(valor);\n';
+      break;
+    case 'sensor_distancia':
+      pino = 'DB4K_pino_ultrasonic_echo'; // Atualizado para a variável correta
+      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
+      codigo_sensor += 'Serial.print("Distância: ");\n';
+      codigo_sensor += 'Serial.println(valor);\n';
+      break;
+    case 'sensor_linha':
+      pino = 'DB4K_pino_analogico_sensor_linha_direito'; // Atualizado para a variável correta
+      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
+      codigo_sensor += 'Serial.print("Linha: ");\n';
+      codigo_sensor += 'Serial.println(valor);\n';
+      break;
+    case 'potenciometro':
+      pino = 'DB4K_pino_analogico_potenciometro'; // Atualizado para a variável correta
+      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
+      codigo_sensor += 'Serial.print("Potenciômetro: ");\n';
+      codigo_sensor += 'Serial.println(valor);\n';
+      break;
+    case 'sensor_toque':
+      pino = 'DB4K_pino_sensor_toque'; // Atualizado para a variável correta
+      codigo_sensor = 'int valor = digitalRead(' + pino + ');\n';
+      codigo_sensor += 'Serial.print("Toque: ");\n';
+      codigo_sensor += 'Serial.println(valor);\n';
+      break;
+  }
+
+  var code = 'Serial.begin(9600);\n' + codigo_sensor;
+  return code;
+};
+
 
 
 Blockly.Arduino['delay'] = function(block) {

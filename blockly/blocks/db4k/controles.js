@@ -34,6 +34,29 @@ var cor_repeticao = 25;
 var cor_selecao = 10;
 
 
+Blockly.Blocks['monitor_serial'] = {
+  init: function() {
+    this.setHelpUrl('');
+    this.setColour(160);
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("path/to/delay.png", 25, 25, "*"))
+        .appendField("Monitorar")
+        .appendField(new Blockly.FieldDropdown([
+          ["Luz", "sensor_luz"],
+          ["Temperatura", "sensor_temperatura"],
+          ["Distância", "sensor_distancia"],
+          ["Linha", "sensor_linha"],
+          ["Potenciômetro", "potenciometro"],
+          ["Toque", "sensor_toque"]
+        ]), "sensor");
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    this.setTooltip('Monitora o valor de um sensor escolhido no monitor serial.');
+  }
+};
+
+
+
   Blockly.Blocks['delay'] = {
   init: function() {
     this.setHelpUrl('http://www.example.com/');

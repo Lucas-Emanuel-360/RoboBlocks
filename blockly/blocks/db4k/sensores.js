@@ -55,7 +55,7 @@ Blockly.Blocks['sensor_luz'] = {
     this.setInputsInline(true);
     this.setOutput(true);
     this.setTooltip('');
-
+    this.variableField_ = null; // Variável para rastrear o campo de variável
   },
 };
   
@@ -147,7 +147,7 @@ Blockly.Blocks['potenciometro'] = {
     this.setOutput(true, null);
     this.setColour(cor_sensores);
     this.setNextStatement(false);
-    
+    this.variableField_ = null; // Variável para rastrear o campo de variável
   },
 };
 

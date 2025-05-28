@@ -64,7 +64,7 @@ var DB4K_valor_margem_temperatura_baixa = 3;
 
 
 //SENSOR_LUZ
-var DB4K_pino_analogico_LDR_luz='A1';
+var DB4K_pino_analogico_LDR_luz='A2';
 var DB4K_valor_margem_luz_alta = 70;
 var DB4K_valor_margem_luz_baixa = 90;
 

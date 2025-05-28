@@ -6435,3 +6435,2868 @@ Launch Server:
 2024-08-27T13:13:06.935Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
 2024-08-27T13:16:22.345Z - info: [ServerMgr] Server stopped.
 2024-08-27T13:16:22.368Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T15:14:08.228Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T15:14:08.228Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T15:14:08.228Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T15:14:08.293Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T15:14:09.032Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T15:14:11.139Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.140Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.141Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.141Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.143Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.143Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.144Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.144Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.145Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:14:11.328Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T15:14:11.335Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T15:39:17.722Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T15:39:20.961Z - info: [ArdublocklySrv] Serial Port set to:
+	COM3
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T15:41:34.320Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "Parando Execução do Programa na Placa..." does not exists!
+2024-11-21T15:41:34.326Z - info: [ArdublocklySrv] 
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.572 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 13 bytes (0%) de mem�ria din�mica, deixando 8.179 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+IDE options set to:
+	Compile and Upload sketch
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T15:54:02.136Z - info: [ServerMgr] Server stopped.
+2024-11-21T15:54:02.183Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T15:54:34.319Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T15:54:34.321Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T15:54:34.321Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T15:54:34.422Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T15:54:35.182Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM3
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T15:54:37.630Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.631Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.632Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.633Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.634Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.635Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.636Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.638Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.639Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:54:37.919Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T15:54:37.924Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T15:55:32.859Z - info: [ServerMgr] Server stopped.
+2024-11-21T15:55:32.886Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T15:58:56.133Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T15:58:56.133Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T15:58:56.133Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T15:58:56.234Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T15:58:57.331Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM3
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T15:58:59.557Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.559Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.560Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.561Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.562Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.564Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.564Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.566Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.567Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T15:58:59.859Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T15:58:59.867Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:01:09.152Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:01:09.181Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:01:19.988Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:01:19.998Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:01:19.998Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:01:20.099Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:01:20.920Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	COM3
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:01:22.671Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.672Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.676Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.676Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.677Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.678Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.679Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.680Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.681Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:01:22.941Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:01:22.945Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:01:27.174Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:01:27.199Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:02:46.278Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:02:46.294Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:02:46.294Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:02:46.370Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:02:47.001Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:02:48.657Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.659Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.661Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.663Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.664Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.665Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.666Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.667Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.668Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:02:48.942Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:02:48.948Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:02:52.821Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:02:52.840Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:03:05.653Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:03:05.656Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:03:05.656Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:03:05.749Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:03:06.500Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:03:08.841Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.842Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.843Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.845Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.846Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.847Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.848Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.850Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:08.851Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:09.152Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:03:09.160Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:03:15.839Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.841Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.841Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.842Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.844Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.845Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.846Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.847Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:15.848Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:16.077Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:03:16.090Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:03:28.666Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.668Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.671Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.671Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.672Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.674Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.674Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.677Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.678Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:03:28.877Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:03:28.893Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:03:35.692Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:04:43.818Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:04:43.818Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:04:43.818Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:04:43.912Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:04:44.600Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:04:46.366Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.368Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.369Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.370Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.371Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.372Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.373Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.374Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.375Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:04:46.641Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:04:46.644Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:04:50.228Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:14:04.174Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:14:04.176Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:14:04.176Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:14:04.237Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:14:04.650Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:14:06.781Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.783Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.785Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.786Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.786Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.787Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.789Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.791Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:06.793Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:14:07.101Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:14:07.104Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:17:38.438Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:17:38.439Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:17:38.440Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:17:38.501Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:17:39.333Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:17:41.192Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.193Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.194Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.194Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.195Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.196Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.197Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.198Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.199Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:17:41.568Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:17:41.571Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:17:48.635Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:17:48.646Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:20:50.142Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:20:50.144Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:20:50.144Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:20:50.194Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:20:50.594Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:20:52.371Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.373Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.373Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.374Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.375Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.376Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.376Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.377Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.379Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:20:52.577Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:20:52.580Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:20:55.014Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:20:55.032Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:21:03.448Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:21:03.449Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:21:03.449Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:21:03.498Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:21:03.881Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:21:05.861Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.864Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.864Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.865Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.865Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.867Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.867Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.867Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:05.868Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:21:06.066Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:21:06.071Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:21:10.025Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:21:10.041Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:22:00.649Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:22:00.649Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:22:00.649Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:22:00.702Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:22:01.090Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:22:03.172Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.173Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.174Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.176Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.176Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.177Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.177Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.178Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.179Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:22:03.393Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:22:03.395Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:22:06.785Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:22:06.800Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:23:18.890Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:23:18.890Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:23:18.890Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:23:18.936Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:23:19.320Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:23:21.287Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.288Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.290Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.290Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.290Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.290Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.292Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.292Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.293Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:23:21.476Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:23:21.480Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:23:24.366Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:23:24.379Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:26:03.022Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:26:03.032Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:26:03.032Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:26:03.082Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:26:03.454Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:26:04.947Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.948Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.949Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.949Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.950Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.950Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.951Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.951Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:04.952Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:26:05.136Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:26:05.139Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:27:18.221Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:27:18.238Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T16:27:25.716Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T16:27:25.716Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T16:27:25.716Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T16:27:25.773Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T16:27:26.171Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T16:27:28.209Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.210Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.211Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.213Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.216Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.216Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.217Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.217Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.219Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T16:27:28.423Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:27:28.427Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T16:27:33.635Z - info: [ServerMgr] Server stopped.
+2024-11-21T16:27:33.649Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T17:22:33.352Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T17:22:33.354Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T17:22:33.354Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T17:22:33.400Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T17:22:33.845Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T21:13:48.667Z - info: [ServerMgr] Server stopped.
+2024-11-21T21:13:48.695Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T21:13:53.854Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T21:13:53.854Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T21:13:53.854Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T21:13:53.952Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T21:13:54.699Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T21:14:07.469Z - info: [ServerMgr] Server stopped.
+2024-11-21T21:14:07.484Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-21T21:14:30.672Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-21T21:14:30.672Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-21T21:14:30.672Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-21T21:14:30.790Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-21T21:14:31.486Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-21T21:14:33.249Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.251Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.253Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.254Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.255Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.256Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.258Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.259Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.260Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-21T21:14:33.566Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T21:14:33.568Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-21T21:22:06.186Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:22:41.054Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:23:13.212Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:25:20.605Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:25:34.162Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:27:31.883Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:27:44.251Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:48:42.760Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-21T21:48:44.831Z - info: [ArdublocklySrv] Serial Port set to:
+	COM3
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-22T00:39:20.441Z - info: [ArdublocklySrv] Process exited with code 1073807364
+2024-11-25T10:12:08.550Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-25T10:12:08.563Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+2024-11-25T10:12:08.563Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-25T10:12:08.626Z - info: [ServerMgr] Command: C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-25T10:12:09.821Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	COM3
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Documents\Lucas Emanuel\ROBOBLOCKS PRA FICA DU BAUM PRA VIAGEM DE BRASILIA\RoboBlocks
+Launch Server:
+
+2024-11-25T10:12:11.649Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.650Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.652Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.652Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.654Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.654Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.655Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.656Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.657Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:12:11.992Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-25T10:12:11.994Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-25T10:12:17.185Z - info: [ServerMgr] Server stopped.
+2024-11-25T10:13:07.265Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-25T10:13:07.265Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\RoboBlocks
+2024-11-25T10:13:07.265Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-25T10:13:07.324Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-25T10:13:07.821Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\RoboBlocks
+Launch Server:
+
+2024-11-25T10:13:09.246Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.248Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.248Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.250Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.251Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.252Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.253Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.254Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.255Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:13:09.437Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-25T10:13:09.439Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-25T10:13:17.753Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+There are no available Serial Ports !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-25T10:13:37.872Z - info: [ServerMgr] Server stopped.
+2024-11-25T10:13:37.888Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-25T10:14:51.730Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-25T10:14:51.731Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-25T10:14:51.731Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-25T10:14:51.797Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-25T10:14:52.393Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-25T10:14:53.821Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.823Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.824Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.825Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.826Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.827Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.828Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.829Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:53.830Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-25T10:14:54.059Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-25T10:14:54.062Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-25T10:14:58.482Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+There are no available Serial Ports !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-25T10:15:13.412Z - info: [ArdublocklySrv] Compiler directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-25T10:15:18.143Z - info: [ServerMgr] Server stopped.
+2024-11-25T10:15:18.159Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-26T12:13:07.265Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-26T12:13:07.267Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-26T12:13:07.267Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-26T12:13:07.482Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-26T12:13:08.378Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-26T12:13:10.678Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.679Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.680Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.682Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.682Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.684Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.686Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.686Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:10.687Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T12:13:11.276Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T12:13:11.281Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T14:34:02.308Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-26T14:34:02.309Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-26T14:34:02.309Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-26T14:34:02.370Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-26T14:34:03.124Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-26T14:34:04.411Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.413Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.414Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.414Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.415Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.417Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.417Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.418Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.418Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T14:34:04.700Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T14:34:04.705Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T14:34:50.660Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T14:34:57.692Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T14:35:09.253Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T14:35:19.406Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T16:58:58.055Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T16:59:12.879Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T17:01:30.695Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T17:01:43.951Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.952Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.953Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.953Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.954Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.955Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.956Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.956Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:43.957Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:01:44.100Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T17:01:44.112Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T17:01:46.038Z - info: [ServerMgr] Server stopped.
+2024-11-26T17:02:12.859Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-26T17:02:12.860Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-26T17:02:12.860Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-26T17:02:12.919Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-26T17:02:13.335Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	COM3
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM3
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-26T17:02:14.920Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.922Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.923Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.925Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.926Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.927Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.928Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.928Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:14.929Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-26T17:02:15.154Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T17:02:15.158Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-26T17:02:36.987Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Serial Port set to:
+	COM3
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T17:05:31.623Z - info: [Renderer "http://localhost:8001/blockly/core/trashcan.js:Blockly.Trashcan.click():L327"] TODO: Inspect trash.
+2024-11-26T18:03:51.545Z - info: [ArdublocklySrv] Arduino output:
+
+O sketch usa 1.260 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.260 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.260 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+Serial Port set to:
+	COM3
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-26T20:39:04.856Z - info: [ServerMgr] Server stopped.
+2024-11-26T20:39:04.886Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-27T12:24:19.951Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-27T12:24:19.967Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-27T12:24:19.967Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-27T12:24:20.034Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-27T12:24:22.936Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-27T12:24:23.285Z - warn: [ArdublocklyElec] Page failed to load (-21). The server is probably not yet running. Trying again in 200 ms.
+2024-11-27T12:24:28.055Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.057Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.057Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.058Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.059Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.060Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.062Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.063Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.064Z - info: [Renderer "http://localhost:8001/DB4K/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T12:24:28.349Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-27T12:24:28.355Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-27T14:06:54.246Z - info: [ServerMgr] Server stopped.
+2024-11-27T14:06:54.270Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-27T14:07:13.506Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-27T14:07:13.509Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-27T14:07:13.509Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-27T14:07:13.594Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-27T14:07:14.222Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	COM4
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM4
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-27T14:07:16.196Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.198Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.199Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.201Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.202Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.203Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.204Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.205Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.206Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-27T14:07:16.479Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-27T14:07:16.482Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-27T17:45:29.000Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 644 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 644 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 2.140 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 57 bytes (0%) de mem�ria din�mica, deixando 8.135 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.258 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 1.412 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 9 bytes (0%) de mem�ria din�mica, deixando 8.183 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 2.320 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 49 bytes (0%) de mem�ria din�mica, deixando 8.143 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 2.320 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 49 bytes (0%) de mem�ria din�mica, deixando 8.143 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 2.340 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 69 bytes (0%) de mem�ria din�mica, deixando 8.123 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM4 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 2.380 bytes (0%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 69 bytes (0%) de mem�ria din�mica, deixando 8.123 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+2024-11-28T01:23:50.094Z - info: [ServerMgr] Server stopped.
+2024-11-28T01:23:50.113Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-28T16:17:01.420Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-28T16:17:01.420Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-28T16:17:01.420Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-28T16:17:01.498Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-28T16:17:02.730Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	COM4
+Default Serial Port set:
+	None
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: None
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-28T16:17:04.804Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.806Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.807Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.807Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.811Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.812Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.813Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.813Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:04.815Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:17:05.251Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-28T16:17:05.256Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-28T16:25:16.961Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-28T16:25:38.737Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-28T16:25:43.675Z - info: [ArdublocklySrv] The selected Serial Port is no longer available !!!
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2024-11-28T16:25:50.732Z - info: [ServerMgr] Server stopped.
+2024-11-28T16:25:50.754Z - info: [ArdublocklySrv] Process exited with code null
+2024-11-28T16:25:53.391Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2024-11-28T16:25:53.391Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2024-11-28T16:25:53.391Z - info: [ArdublocklyElec] OS detected: win32
+2024-11-28T16:25:53.472Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2024-11-28T16:25:54.081Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	None
+Default Serial Port set:
+	COM4
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM4
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2024-11-28T16:25:55.743Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.745Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.747Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.749Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.750Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.751Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.752Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.754Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:55.755Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2024-11-28T16:25:56.035Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-28T16:25:56.039Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2024-11-28T20:02:49.572Z - info: [ServerMgr] Server stopped.
+2024-11-28T20:02:49.598Z - info: [ArdublocklySrv] Process exited with code null
+2025-03-06T12:02:18.220Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-03-06T12:02:18.225Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-03-06T12:02:18.225Z - info: [ArdublocklyElec] OS detected: win32
+2025-03-06T12:02:18.307Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-03-06T12:02:19.449Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	COM4
+Default Serial Port set:
+	COM6
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-03-06T12:02:21.410Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.415Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.416Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.418Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.419Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.420Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.422Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.423Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.424Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-03-06T12:02:21.785Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-03-06T12:02:21.789Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-04-10T12:19:38.659Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-04-10T12:19:38.659Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-04-10T12:19:38.659Z - info: [ArdublocklyElec] OS detected: win32
+2025-04-10T12:19:38.720Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-04-10T12:19:39.524Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-04-10T12:19:41.435Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.438Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.439Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.439Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.441Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.442Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.443Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.443Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.444Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-04-10T12:19:41.782Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-04-10T12:19:41.786Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-04-10T12:21:17.615Z - info: [ServerMgr] Server stopped.
+2025-04-10T12:21:17.635Z - info: [ArdublocklySrv] Process exited with code null
+2025-05-21T16:26:37.445Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-21T16:26:37.447Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-21T16:26:37.447Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-21T16:26:37.503Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-21T16:26:38.250Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-21T16:26:40.055Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.057Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.057Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.059Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.059Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.060Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.060Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.062Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.062Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-21T16:26:40.379Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-21T16:26:40.381Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-21T16:32:27.834Z - info: [ArdublocklySrv] Serving on http://DESKTOP-JABD69I:8001
+Serving on http://DESKTOP-JABD69I:8001
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM6 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.304 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 53 bytes (0%) de mem�ria din�mica, deixando 8.139 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+Ocorreu um erro enquanto o sketch era carregado
+
+Arduino Exit code: 1
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM6 --board arduino:avr:mega
+Serial Port set to:
+	COM3
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+2025-05-21T17:16:14.019Z - info: [ArdublocklySrv] Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+Ocorreu um erro enquanto o sketch era carregado
+
+Arduino Exit code: 1
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+
+Arduino Exit code: 0
+
+Uploading sketch to Arduino...
+CLI command: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks\DB4KSketch\DB4KSketch.ino --upload --port COM3 --board arduino:avr:mega
+Arduino output:
+
+O sketch usa 3.486 bytes (1%) de espa�o de armazenamento para programas. O m�ximo s�o 253.952 bytes.
+Vari�veis globais usam 51 bytes (0%) de mem�ria din�mica, deixando 8.141 bytes para vari�veis locais. O m�ximo s�o 8.192 bytes.
+
+Arduino Error output:
+Carregando configura��o...
+Inicializando pacotes...
+Preparando placas...
+Verificando e enviando...
+avrdude: ser_open(): can't set com-state for "\.\COM3"
+avrdude: ser_drain(): read error: Identificador inv�lido.
+
+avrdude: ser_send(): write error: sorry no info avail
+avrdude: stk500_send(): failed to send command to serial port
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: ser_send(): write error: sorry no info avail
+avrdude: stk500_send(): failed to send command to serial port
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: ser_send(): write error: sorry no info avail
+avrdude: stk500_send(): failed to send command to serial port
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: ser_send(): write error: sorry no info avail
+avrdude: stk500_send(): failed to send command to serial port
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: ser_send(): write error: sorry no info avail
+avrdude: stk500_send(): failed to send command to serial port
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: ser_send(): write error: sorry no info avail
+avrdude: stk500_send(): failed to send command to serial port
+avrdude: stk500v2_ReceiveMessage(): timeout
+avrdude: stk500v2_getsync(): timeout communicating with programmer
+a porta serial avrdude: stk500v2_getsync(): timeout communicating with programmer
+ selecionada n�o existe ou sua placa n�o est� conectada
+
+2025-05-28T16:25:23.504Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-28T16:25:23.505Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-28T16:25:23.505Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-28T16:25:23.555Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-28T16:25:24.238Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Settings file Serial Port is not currently available:
+	COM3
+Default Serial Port set:
+	COM6
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-28T16:25:25.995Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:25.997Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:25.998Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:25.998Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:26.000Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:26.000Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:26.001Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:26.002Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:26.002Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:25:26.393Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:25:26.399Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:40:30.356Z - info: [ServerMgr] Server stopped.
+2025-05-28T16:40:30.386Z - info: [ArdublocklySrv] Process exited with code null
+2025-05-28T16:40:44.629Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-28T16:40:44.633Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-28T16:40:44.633Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-28T16:40:44.695Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-28T16:40:45.565Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-28T16:40:47.693Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.694Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.696Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.696Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.698Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.698Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.699Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.700Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.700Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:40:47.901Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:40:47.915Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:48:22.094Z - info: [ServerMgr] Server stopped.
+2025-05-28T16:48:22.117Z - info: [ArdublocklySrv] Process exited with code null
+2025-05-28T16:48:29.242Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-28T16:48:29.244Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-28T16:48:29.244Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-28T16:48:29.303Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-28T16:48:30.111Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-28T16:48:32.251Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.253Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.254Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.255Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.255Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.257Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.259Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.259Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.261Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:48:32.462Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:48:32.469Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:49:03.673Z - info: [ServerMgr] Server stopped.
+2025-05-28T16:49:03.694Z - info: [ArdublocklySrv] Process exited with code null
+2025-05-28T16:49:06.646Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-28T16:49:06.647Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-28T16:49:06.647Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-28T16:49:06.703Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-28T16:49:07.462Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-28T16:49:08.980Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.981Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.982Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.983Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.983Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.984Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.984Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.984Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:08.985Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:49:09.184Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:49:09.187Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:50:50.993Z - info: [ServerMgr] Server stopped.
+2025-05-28T16:50:51.011Z - info: [ArdublocklySrv] Process exited with code null
+2025-05-28T16:50:53.732Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-28T16:50:53.734Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-28T16:50:53.734Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-28T16:50:53.792Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-28T16:50:54.559Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-28T16:50:56.089Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.092Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.093Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.096Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.098Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.103Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.103Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.105Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.107Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:50:56.303Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:50:56.308Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:51:01.318Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:51:01.431Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:51:04.737Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:51:10.736Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:51:10.863Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:55:04.818Z - info: [ServerMgr] Server stopped.
+2025-05-28T16:55:04.858Z - info: [ArdublocklySrv] Process exited with code null
+2025-05-28T16:56:23.220Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.3-a
+2025-05-28T16:56:23.221Z - info: [ArdublocklyElec] Ardublockly root dir: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+2025-05-28T16:56:23.221Z - info: [ArdublocklyElec] OS detected: win32
+2025-05-28T16:56:23.282Z - info: [ServerMgr] Command: C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\arduexec\server\start.exe --findprojectroot --nobrowser
+2025-05-28T16:56:24.231Z - info: [ArdublocklySrv] Running Python 3.4.4 (64 bit) on Windows-10-10.0.22621-SP0
+Not using local-packages, likely running packaged.
+
+======= Parsing Command line arguments =======
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+======= Resolving server and project paths =======
+Ardublockly root directory:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Current working directory set to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server root:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Selected server ip:
+	localhost
+Selected server port:
+	8001
+
+======= Loading Settings =======
+Settings loaded from:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+Final settings loaded:
+	Compiler directory: C:\Users\Projeto\Desktop\Robo-Blocks\Arduino\Arduino\arduino_debug.exe
+	Arduino Board Key: Mega
+	Arduino Board Value: arduino:avr:mega
+	Serial Port Value: COM6
+	Sketch Name: DB4KSketch
+	Sketch Directory: C:\Users\Projeto\Documents\Lucas Emanuel\RoboBlocks-main\RoboBlocks\RoboBlocks
+	Load IDE option: upload
+Settings file saved to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks\ServerCompilerSettings.ini
+
+======= Starting Server =======
+Setting HTTP Server Document Root to:
+	C:\Users\Projeto\Desktop\Robo-Blocks\RoboBlocks
+Launch Server:
+
+2025-05-28T16:56:26.389Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.390Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.391Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.392Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.392Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.393Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.394Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.396Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.397Z - info: [Renderer "http://localhost:8001/ardublockly/ardublockly_lang.js:Ardublockly.getLocalStr():L180"] Localised text string ID "null" does not exists!
+2025-05-28T16:56:26.643Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:56:26.648Z - error: [Renderer "http://localhost:8001/closure-library/closure/goog/base.js:goog.logToConsole_():L652"] goog.require could not find: Blockly.Msg.en
+2025-05-28T16:56:42.797Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:42.992Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:45.772Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:46.191Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:46.290Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:46.425Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:46.435Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:46.455Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:47.716Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:49.050Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T16:56:49.291Z - error: [Renderer "http://localhost:8001/blockly/generators/arduino/sensores.js:Blockly.Arduino.sensor_luz():L179"] Sensor de Luz: Variáveis 'valor_margem_luz_alta' ou 'valor_margem_luz_baixa' não estão definidas globalmente em JavaScript!
+2025-05-28T17:13:58.610Z - info: [ServerMgr] Server stopped.
+2025-05-28T17:13:58.634Z - info: [ArdublocklySrv] Process exited with code null

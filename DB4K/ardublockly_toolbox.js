@@ -14,8 +14,7 @@ var Ardublockly = Ardublockly || {};
 Ardublockly.TOOLBOX_XML =
 '<xml>'+
 '  <sep></sep>' +
-'  <category name="Controle">' +
-'       <block type="monitor_serial"></block> ' +  
+'  <category name="Controle">' +  
 '  		<block type="delay"></block>' +
 '		<block type="repetir"></block>' +
 '		<block type="enquanto"></block>' +

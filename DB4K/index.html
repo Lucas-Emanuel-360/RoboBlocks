@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 
@@ -7,23 +8,23 @@
   <meta name="theme-color" content="#00878F">
   <link rel="icon" href="img/db4kimages/icon_db4k.ico"> 
   <title class="translatable_title">MyMaker</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  
+  <!-- Removido Socket.IO - agora usa Web Serial API -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
   <script src="db4k_setup.js"></script>
-  <!-->
   
   <!-- Materialize, Prettify, and Ardublockly CSS -->
   <link rel="stylesheet" href="materialize/materialize.css" media="screen,projection">
   <link rel="stylesheet" href="prettify/arduino.css">
   <link rel="stylesheet" href="ardublockly.css" media="screen,projection">
 
+  <!-- Web Serial API Files - NOVOS ARQUIVOS -->
+  <script src="web_serial_uploader.js"></script>
+  <script src="db4k_webserial_integration.js"></script>
 
-  <!-- Ardublockly - These three files contain the compress version -->
-  <!-- <script src="../blockly/blockly_compressed.js"></script>
-  <script src="../blockly/blocks_compressed.js"></script>
-  <script src="../blockly/arduino_compressed.js"></script> -->
-  <!-- To use the uncompressed version comment out the above and comment in the ones below -->
+  <!-- Blockly Scripts -->
   <script src="../blockly/blockly_uncompressed.js"></script>
   <script src="../blockly/blocks/logic.js"></script>
   <script src="../blockly/blocks/loops.js"></script>
@@ -74,15 +75,91 @@
   <script src="../blockly/generators/arduino/carrinho.js"></script>
   <script src="../blockly/generators/arduino/braco.js"></script>
 
-
-  <!-- Default language js files, user selection appended to head on load -->
   <script src="../blockly/msg/js/pt-br.js"></script>
   <script src="msg/en.js"></script>
+
+  <!-- CSS adicional para Web Serial -->
+  <style>
+    .connection-status {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 12px;
+      background: #ff9800;
+      color: white;
+      z-index: 1000;
+    }
+    
+    .connection-status.connected {
+      background: #4caf50;
+    }
+    
+    .upload-progress {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background: #00878F;
+      transition: width 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .webserial-info {
+      background: #e3f2fd;
+      border: 1px solid #2196f3;
+      border-radius: 4px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    
+    .compatibility-warning {
+      background: #fff3e0;
+      border: 1px solid #ff9800;
+      border-radius: 4px;
+      padding: 15px;
+      margin: 10px 0;
+    }
+    
+    .upload-status {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border-radius: 4px;
+      color: white;
+      font-weight: bold;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .upload-status.show {
+      opacity: 1;
+    }
+    
+    .upload-status.success {
+      background: #4caf50;
+    }
+    
+    .upload-status.error {
+      background: #f44336;
+    }
+  </style>
 </head>
-<!--********************************************************************************-->
-<!--  ( Modified by RLQ DB4K )  Included background image -->
 
 <body background="img/db4kimages/marcadgua.png" style="background-size: cover;">
+  <!-- Status da conexão serial -->
+  <div class="connection-status" id="connection-status">
+    Web Serial Desconectado
+  </div>
+  
+  <!-- Barra de progresso do upload -->
+  <div class="upload-progress" id="upload-progress" style="width: 0%"></div>
+  
+  <!-- Status do upload -->
+  <div class="upload-status" id="upload-status"></div>
   <!---------------------------------------------------------------------------------- >
   <!-- Horizontal Navigation bar -->
   <nav class="nav-fixed arduino_teal">

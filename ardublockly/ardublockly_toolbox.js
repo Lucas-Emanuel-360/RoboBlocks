@@ -21,6 +21,7 @@ Ardublockly.TOOLBOX_XML =
 '	    <block type="condicional_simples"></block>' +
 '	    <block type="condicional_completo"></block>' +
 '		<block type="parar_repeticao_do_programa"></block>' +
+'       <block type="monitor_serial"></block> ' +
 ' </category>' +
 '  <sep_strong></sep_strong>' +
 '    <category name="LED">' +

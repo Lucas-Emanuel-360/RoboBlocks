@@ -361,76 +361,85 @@ Blockly.Arduino['sensor_distancia'] = function(block) {
 //SENSOR SEGUIDOR DE LINHA
 //*****************************************************************
 function codigo_verifica_refletancia(){
-	var codigo = 
-		'int refletancia = 0;\n' +
-		   'for (int i = 0; i<10;++i){\n' +
-		'refletancia = analogRead(pino_analogico) + refletancia;\n' +
-		'}\n' +
-		'refletancia = refletancia/10;\n' +
-		'return refletancia;\n';
-	return codigo;	
-		
-	}
-	
-	Blockly.Arduino['sensor_linha'] = function(block) {
-	  var dropdown_reflexo = block.getFieldValue('REFLEXO');
-	  var dropdown_direcao = block.getFieldValue('DIRECAO');
-	  
-	  //Declara a função que verifica a refletancia 
-	  var nome_funcao = 'verifica_refletancia' ;
-	  var func = ['\n'+'int ' + Blockly.Arduino.DEF_FUNC_NAME + '(int pino_analogico)\n{\n' +
-	  codigo_verifica_refletancia() + '}\n']; 
-	  var funcName = Blockly.Arduino.addFunction(nome_funcao, func.join('\n'));	
-	
-	  //Definitions
-	  Blockly.Arduino.definitions_['pino_seguidor_direita'] = 'int pino_seguidor_direita = ' +  pino_analogico_sensor_linha_direito +';';
-	  Blockly.Arduino.definitions_['pino_seguidor_esquerda'] = 'int pino_seguidor_esquerda = ' + pino_analogico_sensor_linha_esquerdo +';';
-	  Blockly.Arduino.definitions_['pino_seguidor_centro'] = 'int pino_seguidor_centro = ' + pino_analogico_sensor_linha_centro +';';
-	  Blockly.Arduino.definitions_['referencia_reflexo_direita'] ='int referencia_reflexo_direita;';
-	  Blockly.Arduino.definitions_['referencia_reflexo_esquerda'] ='int referencia_reflexo_esquerda;';
-	  Blockly.Arduino.definitions_['referencia_reflexo_centro'] ='int referencia_reflexo_centro;';
-	   //Setup Calibrar
-	  Blockly.Arduino.addSetup('io_' + "referencia_reflexo_direita", 'referencia_reflexo_direita = '+ funcName + '(pino_seguidor_direita);', false);
-	  Blockly.Arduino.addSetup('io_' + "referencia_reflexo_esquerda", 'referencia_reflexo_esquerda = '+ funcName + '(pino_seguidor_esquerda);', false);
-	  Blockly.Arduino.addSetup('io_' + "referencia_reflexo_centro", 'referencia_reflexo_centro = '+ funcName + '(pino_seguidor_centro);', false);
-	
-	  // loop
-	  if(dropdown_direcao == 'DIREITA'){
-		if(dropdown_reflexo == 'MUITO'){
-			var code = 'analogRead(pino_seguidor_direita) < ' + valor_margem_refletancia_alta;
-		}
-		else if(dropdown_reflexo == 'POUCO'){
-			var code = 'analogRead(pino_seguidor_direita) > ' + valor_margem_refletancia_baixa;
-		}
-		else if(dropdown_reflexo == 'MEDIA'){
-			var code = '(analogRead(pino_seguidor_direita) > ' + valor_margem_refletancia_media_inicio + ') && (analogRead(pino_seguidor_direita) < ' + valor_margem_refletancia_media_fim + ')';
-		}
-	  }
-	  if(dropdown_direcao == 'ESQUERDA'){
-		if(dropdown_reflexo == 'MUITO'){
-			var code = 'analogRead(pino_seguidor_esquerda) < ' + valor_margem_refletancia_alta;
-		}
-		else if(dropdown_reflexo == 'POUCO'){
-			var code = 'analogRead(pino_seguidor_esquerda) > ' + valor_margem_refletancia_baixa;
-		}
-		else if(dropdown_reflexo == 'MEDIA'){
-			var code = '(analogRead(pino_seguidor_esquerda) > ' + valor_margem_refletancia_media_inicio + ') && (analogRead(pino_seguidor_esquerda) < ' + valor_margem_refletancia_media_fim + ')';
-		}
-	  }
-	  if(dropdown_direcao == 'CENTRO'){
-		if(dropdown_reflexo == 'MUITO'){
-			var code = 'analogRead(pino_seguidor_centro) < ' + valor_margem_refletancia_alta;
-		}
-		else if(dropdown_reflexo == 'POUCO'){ 
-			var code = 'analogRead(pino_seguidor_centro) > ' + valor_margem_refletancia_baixa;
-		}
-		else if(dropdown_reflexo == 'MEDIA'){
-			var code = '(analogRead(pino_seguidor_centro) > ' + valor_margem_refletancia_media_inicio + ') && (analogRead(pino_seguidor_centro) < ' + valor_margem_refletancia_media_fim + ')';
-		}
-	  }
-	  return [code, Blockly.Arduino.ORDER_CONDITIONAL];
-	};
-	
+    // Esta função auxiliar está correta, não precisa de alterações.
+    // Ela tira uma média de 10 leituras para estabilizar o valor do sensor.
+    var codigo = 
+        'int refletancia = 0;\n' +
+        'for (int i = 0; i < 10; ++i){\n' +
+        '  refletancia = analogRead(pino_analogico) + refletancia;\n' +
+        '}\n' +
+        'refletancia = refletancia / 10;\n' +
+        'return refletancia;\n';
+    return codigo;   
+}
+    
+Blockly.Arduino['sensor_linha'] = function(block) {
+    var dropdown_reflexo = block.getFieldValue('REFLEXO');
+    var dropdown_direcao = block.getFieldValue('DIRECAO');
+    
+    // --- PARTE 1: DEFINIÇÕES E FUNÇÕES ---
+
+    // Declara a função que verifica a refletancia de forma estável
+    var nome_funcao = 'verifica_refletancia';
+    var func = [
+        'int ' + Blockly.Arduino.DEF_FUNC_NAME + '(int pino_analogico)\n{\n' +
+        codigo_verifica_refletancia() + '}\n'
+    ]; 
+    var funcName = Blockly.Arduino.addFunction(nome_funcao, func.join('\n')); 
+    
+    // Define as variáveis globais para os pinos e para os valores de calibração
+    Blockly.Arduino.definitions_['pino_seguidor_direita'] = 'int pino_seguidor_direita = ' + pino_analogico_sensor_linha_direito +';';
+    Blockly.Arduino.definitions_['pino_seguidor_esquerda'] = 'int pino_seguidor_esquerda = ' + pino_analogico_sensor_linha_esquerdo +';';
+    Blockly.Arduino.definitions_['pino_seguidor_centro'] = 'int pino_seguidor_centro = ' + pino_analogico_sensor_linha_centro +';';
+    Blockly.Arduino.definitions_['referencia_reflexo_direita'] ='int referencia_reflexo_direita;';
+    Blockly.Arduino.definitions_['referencia_reflexo_esquerda'] ='int referencia_reflexo_esquerda;';
+    Blockly.Arduino.definitions_['referencia_reflexo_centro'] ='int referencia_reflexo_centro;';
+
+    // --- PARTE 2: CALIBRAÇÃO NO SETUP ---
+
+    // No setup, calibra cada sensor chamando a função e guardando o valor de referência.
+    // Isso deve ser feito com o robô sobre a superfície branca (ou a cor de referência).
+    Blockly.Arduino.addSetup('calibra_direita', 'referencia_reflexo_direita = '+ funcName + '(pino_seguidor_direita);', false);
+    Blockly.Arduino.addSetup('calibra_esquerda', 'referencia_reflexo_esquerda = '+ funcName + '(pino_seguidor_esquerda);', false);
+    Blockly.Arduino.addSetup('calibra_centro', 'referencia_reflexo_centro = '+ funcName + '(pino_seguidor_centro);', false);
+    
+    // --- PARTE 3: GERAÇÃO DO CÓDIGO NO LOOP ---
+    
+    // Otimização: seleciona o pino e a variável de referência corretos com base no dropdown
+    var pino_selecionado = '';
+    var referencia_selecionada = '';
+    if (dropdown_direcao == 'DIREITA') {
+        pino_selecionado = 'pino_seguidor_direita';
+        referencia_selecionada = 'referencia_reflexo_direita';
+    } else if (dropdown_direcao == 'ESQUERDA') {
+        pino_selecionado = 'pino_seguidor_esquerda';
+        referencia_selecionada = 'referencia_reflexo_esquerda';
+    } else if (dropdown_direcao == 'CENTRO') {
+        pino_selecionado = 'pino_seguidor_centro';
+        referencia_selecionada = 'referencia_reflexo_centro';
+    }
+
+    var code = '';
+    // Agora, a lógica de comparação usa o valor de referência da calibração.
+    // Assumindo que:
+    // - "MUITO" reflexo (superfície clara) = leitura BAIXA
+    // - "POUCO" reflexo (linha preta)     = leitura ALTA
+    if (dropdown_reflexo == 'MUITO') {
+        // A leitura atual é MENOR que o valor de referência (claro) + uma pequena margem?
+        // Isso significa que está vendo uma superfície clara.
+        var code = funcName + '(' + pino_selecionado + ') < (' + referencia_selecionada + ' + ' + valor_margem_refletancia_baixa + ')';
+    } else if (dropdown_reflexo == 'POUCO') {
+        // A leitura atual é MAIOR que o valor de referência (claro) + uma margem?
+        // Isso significa que está vendo uma superfície escura (a linha).
+        var code = funcName + '(' + pino_selecionado + ') > (' + referencia_selecionada + ' + ' + valor_margem_refletancia_baixa + ')';
+    } else if (dropdown_reflexo == 'MEDIA') {
+        // A leitura atual está PRÓXIMA do valor de referência?
+        // Isso pode indicar que o sensor está na borda entre o claro e o escuro.
+        var code = 'abs(' + funcName + '(' + pino_selecionado + ') - ' + referencia_selecionada + ') < ' + valor_margem_refletancia_media_inicio;
+    }
+    
+    return [code, Blockly.Arduino.ORDER_CONDITIONAL];
+};
 
 
 //*****************************************************************

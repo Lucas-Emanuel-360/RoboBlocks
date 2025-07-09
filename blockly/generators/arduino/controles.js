@@ -71,49 +71,85 @@ var DB4K_pino_sensor_toque3 = 17;
 
 Blockly.Arduino['monitor_serial'] = function(block) {
   var sensor = block.getFieldValue('sensor');
-  var codigo_sensor;
-  var pino;
+  var codigo_sensor = '';
 
+  // 1. GARANTE QUE O SERIAL.BEGIN ESTEJA NO SETUP
+  // Isso corrige o problema de chamar Serial.begin() repetidamente no loop.
+  Blockly.Arduino.addSetup('serial_begin', 'Serial.begin(9600);', false);
+
+  // 2. CORRIGE A LÓGICA DE CADA SENSOR
   switch(sensor) {
     case 'sensor_luz':
-      pino = 'DB4K_pino_analogico_LDR_luz'; // Atualizado para a variável correta
-      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
-      codigo_sensor += 'Serial.print("Luz: ");\n';
-      codigo_sensor += 'Serial.println(valor);\n';
+      // Define o pino dentro do case para manter o código organizado
+      Blockly.Arduino.definitions_['pino_ldr'] = 'int DB4K_pino_analogico_LDR_luz = A0;'; // Exemplo de pino
+      codigo_sensor = 'int valor = analogRead(DB4K_pino_analogico_LDR_luz);\n' +
+                      'Serial.print("Luz: ");\n' +
+                      'Serial.println(valor);\n';
       break;
+
     case 'sensor_temperatura':
-      pino = 'DB4K_pino_analogico_sensor_temperatura'; // Atualizado para a variável correta
-      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
-      codigo_sensor += 'Serial.print("Temperatura: ");\n';
-      codigo_sensor += 'Serial.println(valor);\n';
+      Blockly.Arduino.definitions_['pino_temp'] = 'int DB4K_pino_analogico_sensor_temperatura = A1;'; // Exemplo de pino
+      codigo_sensor = 'int valor = analogRead(DB4K_pino_analogico_sensor_temperatura);\n' +
+                      'Serial.print("Temperatura: ");\n' +
+                      'Serial.println(valor);\n';
       break;
+
     case 'sensor_distancia':
-      pino = 'DB4K_pino_ultrasonic_echo'; // Atualizado para a variável correta
-      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
-      codigo_sensor += 'Serial.print("Distância: ");\n';
-      codigo_sensor += 'Serial.println(valor);\n';
+      // LÓGICA CORRETA PARA SENSOR ULTRASSÔNICO
+      Blockly.Arduino.definitions_['pino_ultrasonic_trig'] = 'int DB4K_pino_ultrasonic_trig = 12;'; // Exemplo de pino
+      Blockly.Arduino.definitions_['pino_ultrasonic_echo'] = 'int DB4K_pino_ultrasonic_echo = 13;'; // Exemplo de pino
+      
+      var func = [
+        'long ler_distancia_cm(int pino_trig, int pino_echo) {',
+        '  pinMode(pino_trig, OUTPUT);',
+        '  pinMode(pino_echo, INPUT);',
+        '  digitalWrite(pino_trig, LOW);',
+        '  delayMicroseconds(2);',
+        '  digitalWrite(pino_trig, HIGH);',
+        '  delayMicroseconds(10);',
+        '  digitalWrite(pino_trig, LOW);',
+        '  long duration = pulseIn(pino_echo, HIGH);',
+        '  return duration * 0.034 / 2;',
+        '}'
+      ];
+      var funcName = Blockly.Arduino.addFunction('ler_distancia_ultrassonica', func.join('\n'));
+
+      codigo_sensor = 'long distancia = ' + funcName + '(DB4K_pino_ultrasonic_trig, DB4K_pino_ultrasonic_echo);\n' +
+                      'Serial.print("Distancia (cm): ");\n' +
+                      'Serial.println(distancia);\n';
       break;
+
     case 'sensor_linha':
-      pino = 'DB4K_pino_analogico_sensor_linha_direito'; // Atualizado para a variável correta
-      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
-      codigo_sensor += 'Serial.print("Linha: ");\n';
-      codigo_sensor += 'Serial.println(valor);\n';
+      // LÓGICA AJUSTADA PARA MOSTRAR OS DOIS SENSORES (ESQUERDO E DIREITO)
+      Blockly.Arduino.definitions_['pino_seguidor_direita'] = 'int pino_seguidor_direita = A2;'; // Exemplo de pino
+      Blockly.Arduino.definitions_['pino_seguidor_esquerda'] = 'int pino_seguidor_esquerda = A3;'; // Exemplo de pino
+      
+      codigo_sensor = 'int valor_esq = analogRead(pino_seguidor_esquerda);\n' +
+                      'int valor_dir = analogRead(pino_seguidor_direita);\n' +
+                      'Serial.print("Esquerdo: ");\n' +
+                      'Serial.print(valor_esq);\n' +
+                      'Serial.print(" | Direito: ");\n' +
+                      'Serial.println(valor_dir);\n';
       break;
+
     case 'potenciometro':
-      pino = 'DB4K_pino_analogico_potenciometro'; // Atualizado para a variável correta
-      codigo_sensor = 'int valor = analogRead(' + pino + ');\n';
-      codigo_sensor += 'Serial.print("Potenciômetro: ");\n';
-      codigo_sensor += 'Serial.println(valor);\n';
+      Blockly.Arduino.definitions_['pino_pot'] = 'int DB4K_pino_analogico_potenciometro = A4;'; // Exemplo de pino
+      codigo_sensor = 'int valor = analogRead(DB4K_pino_analogico_potenciometro);\n' +
+                      'Serial.print("Potenciometro: ");\n' +
+                      'Serial.println(valor);\n';
       break;
+
     case 'sensor_toque':
-      pino = 'DB4K_pino_sensor_toque'; // Atualizado para a variável correta
-      codigo_sensor = 'int valor = digitalRead(' + pino + ');\n';
-      codigo_sensor += 'Serial.print("Toque: ");\n';
-      codigo_sensor += 'Serial.println(valor);\n';
+      Blockly.Arduino.definitions_['pino_toque'] = 'int DB4K_pino_sensor_toque = 2;'; // Exemplo de pino
+      codigo_sensor = 'int valor = digitalRead(DB4K_pino_sensor_toque);\n' +
+                      'Serial.print("Toque: ");\n' +
+                      'Serial.println(valor);\n';
       break;
   }
 
-  var code = 'Serial.begin(9600);\n' + codigo_sensor;
+  // 3. ADICIONA O DELAY E RETORNA O CÓDIGO FINAL
+  // O delay evita que o monitor serial seja inundado com dados, facilitando a leitura.
+  var code = codigo_sensor + 'delay(200);\n';
   return code;
 };
 

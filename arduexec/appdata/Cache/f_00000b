@@ -1,370 +1,1082 @@
 /**
- * @license Licensed under the Apache License, Version 2.0 (the "License"):
- *          http://www.apache.org/licenses/LICENSE-2.0
+ * @license
+ * Visual Blocks Language
+ *
+ * Copyright 2012 Google Inc.
+ * https://developers.google.com/blockly/
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 /**
- * @fileoverview Implements the required data for functions for selecting
- *     amongst different Arduino boards.
+ * @fileoverview Generating Code for DBK special Blocks.
+ * @author Rubens Queiroz
  */
 'use strict';
 
-goog.provide('Blockly.Arduino.Boards');
-
+goog.provide('Blockly.Arduino.atuadores');
 goog.require('Blockly.Arduino');
 
+//--------------------------------------------
+//Generators included by RLQ - DB4K
+//--------------------------------------------
+
+//******************************************************
+//Inicializa Pinos etc.
+//*******************************************************
+
+// Carrega os valores dos pinos do arquivo DB4K_setup.ini 
+//para as variáveis globais DB4k_pino_xxxxxx
+
+//Define os pinos utilizados pelos LEDs
+var pinoLedVermelho = DB4K_pino_LED_vermelho;
+var pinoLedAmarelo = DB4K_pino_LED_amarelo;
+var pinoLedVerde = DB4K_pino_LED_verde;
+var pinoLedVermelho2 = DB4K_pino_LED_vermelho2;
+var pinoLedAmarelo2 = DB4K_pino_LED_amarelo2;
+var pinoLedVerde2 = DB4K_pino_LED_verde2;
+
+//Define velocidade da piscada do LED
+var velocidade_baixa_blink=DB4K_velocidade_baixa_blink;
+var velocidade_media_blink=DB4K_velocidade_media_blink;
+var velocidade_alta_blink=DB4K_velocidade_alta_blink;
+
+//Define pinos do LED RGB
+
+var pino_rgb_vermelho = DB4K_pino_RGB_vermelho;
+var pino_rgb_verde = DB4K_pino_RGB_verde;
+var pino_rgb_azul = DB4K_pino_RGB_azul;
+var pino_rgb_vermelho = DB4K_pino_RGB_vermelho;
+var pino_rgb_verde = DB4K_pino_RGB_verde;
+var pino_rgb_azul = DB4K_pino_RGB_azul;
+
+//Define o pino utilizado pelo servo motor
+var pinoServoMotor = DB4K_pino_Servo_Motor;
+
+//define o pino (PWM) e outras variáveis utilizadas pelo Modot DC
+var pinoMotorDC = DB4K_pino_MotorDC;
+var velocidade_baixa_motorDC=DB4K_velocidade_baixa_motorDC;
+var velocidade_media_motorDC=DB4K_velocidade_media_motorDC;
+var velocidade_alta_motorDC=DB4K_velocidade_alta_motorDC;
+
+//Define pinos e outras variáveis utilizadas para o display LCD
+
+var nomeLCD = 'lcd';
+var nomeSerial = 'Serial'
+var velocidadeSerial = DB4K_velocidade_serial;
+
+var pino_rs = DB4K_pino_rs;
+var pino_rw = DB4K_pino_rw;
+var pino_enable = DB4K_pino_enable;
+var pino_dados_4 = DB4K_pino_dados_4;
+var pino_dados_5 = DB4K_pino_dados_5; 
+var pino_dados_6 = DB4K_pino_dados_6;
+var pino_dados_7 = DB4K_pino_dados_7;
+
+var tamanho_linha_lcd = DB4K_tamanho_linha_LCD;
+var numero_linhas_lcd = '2';
+
+//Define pinos no Display de 7 segmentos
+
+var pino_segmento_F = DB4K_pino_segmento_F;
+var pino_segmento_G = DB4K_pino_segmento_G;
+var pino_segmento_E = DB4K_pino_segmento_E;
+var pino_segmento_D = DB4K_pino_segmento_D;
+var pino_segmento_A = DB4K_pino_segmento_A;
+var pino_segmento_B = DB4K_pino_segmento_B;
+var pino_segmento_C = DB4K_pino_segmento_C;
+var pino_ponto_decimal = DB4K_pino_ponto_decimal;
+
+//Define pino e outras variáveis para o buzzer
+var pino_buzzer = DB4K_pino_buzzer;
+var tempo_sirene=10;
+//*****************************************************************************
+
+//*******************************************************
+//Acende LED
+//*******************************************************
+
+
+Blockly.Arduino['acender_led'] = function(block) {
+	var colour_cor_led = block.getFieldValue('cor_led');
+	var dropdown_porta_led = block.getFieldValue('porta_led');
+	var porta = block.getFieldValue('led_variable'); // Obtém o valor da porta do campo de texto
+  
+	var pinKey;
+	var pinLed = porta;
+  
+	// Troca o Valor Hexadecimal da Cor pelo "pino" referente à cor
+	switch(colour_cor_led) {
+	  case '#ff0000': // Vermelho
+		if (dropdown_porta_led === '1') {
+		  pinKey = "pino_led_vermelho";
+		  pinLed;
+		} else if (dropdown_porta_led === '2') {
+		  pinKey = "pino_led_vermelho2";
+		  pinLed;
+		}
+		break;
+	  case '#00ff00': // Verde
+		if (dropdown_porta_led === '1') {
+		  pinKey = "pino_led_verde";
+		  pinLed;
+		} else if (dropdown_porta_led === '2') {
+		  pinKey = "pino_led_verde2";
+		  pinLed;
+		}
+		break;
+	  case '#ffff00': // Amarelo
+		if (dropdown_porta_led === '1') {
+		  pinKey = "pino_led_amarelo";
+		  pinLed;
+		} else if (dropdown_porta_led === '2') {
+		  pinKey = "pino_led_amarelo2";
+		  pinLed;
+		}
+		break;
+	  // Adicione outros casos de cores conforme necessário
+	  default:
+		pinKey = "pino_led_desconhecido";
+		pinLed = -1; // Valor inválido
+	}
+  
+	// Geração das definições e setup para o Arduino
+	if (pinLed !== -1) {
+	  Blockly.Arduino.definitions_[pinKey] = 'int ' + pinKey + ' = ' + pinLed + ';';
+	  Blockly.Arduino.addSetup('io_' + pinKey, 'pinMode(' + pinKey + ', OUTPUT);', false);
+	}
+  
+	var code = '';
+	if (pinLed !== -1) {
+	  code = 'digitalWrite(' + pinKey + ', HIGH);\n';
+	}
+	return code;
+  };
+
+
+//*******************************************************
+//Apaga LED
+//*******************************************************
+
+Blockly.Arduino['apagar_led'] = function(block) {
+	var colour_cor_led = block.getFieldValue('cor_led');
+	var dropdown_porta_led = block.getFieldValue('porta_led');
+	var porta = block.getFieldValue('led_variable'); // Obtém o valor da porta do campo de texto
+
+	var pinKey;
+	var pinLed = porta;
+
+	// Troca o Valor Hexadecimal da Cor pelo "pino" referente à cor
+	switch(colour_cor_led) {
+		case '#ff0000': // Vermelho
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_vermelho";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_vermelho2";
+				pinLed;
+			}
+			break;
+		case '#00ff00': // Verde
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_verde";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_verde2";
+				pinLed;
+			}
+			break;
+		case '#ffff00': // Amarelo
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_amarelo";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_amarelo2";
+				pinLed;
+			}
+			break;
+		// Adicione outros casos de cores conforme necessário
+		default:
+			pinKey = "pino_led_desconhecido";
+			pinLed = -1; // Valor inválido
+	}
+
+	// Geração das definições e setup para o Arduino
+	if (pinLed !== -1) {
+		Blockly.Arduino.definitions_[pinKey] = 'int ' + pinKey + ' = ' + pinLed + ';';
+		Blockly.Arduino.addSetup('io_' + pinKey, 'pinMode(' + pinKey + ', OUTPUT);', false);
+	}
+
+	var code = '';
+	if (pinLed !== -1) {
+		code = 'digitalWrite(' + pinKey + ', LOW);\n';
+	}
+	return code;
+};
+
+
+//*******************************************************
+//Pisca LED
+//*******************************************************
+Blockly.Arduino['piscar_led'] = function(block) {
+	var colour_cor_led = block.getFieldValue('cor_led');
+	var dropdown_porta_led = block.getFieldValue('porta_led');
+	var dropdown_velocidade_blink = block.getFieldValue('velocidade_blink');
+	var porta = block.getFieldValue('led_variable'); // Obtém o valor da porta do campo de texto
+
+	var pinKey;
+	var pinLed = porta;
+	var velocidade_blink;
+
+	// Troca o Valor Hexadecimal da Cor pelo "pino" referente à cor
+	switch(colour_cor_led) {
+		case '#ff0000': // Vermelho
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_vermelho";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_vermelho2";
+				pinLed;
+			}
+			break;
+		case '#00ff00': // Verde
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_verde";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_verde2";
+				pinLed;
+			}
+			break;
+		case '#ffff00': // Amarelo
+			if (dropdown_porta_led === '1') {
+				pinKey = "pino_led_amarelo";
+				pinLed;
+			} else if (dropdown_porta_led === '2') {
+				pinKey = "pino_led_amarelo2";
+				pinLed;
+			}
+			break;
+		// Adicione outros casos de cores conforme necessário
+		default:
+			pinKey = "pino_led_desconhecido";
+			pinLed = -1; // Valor inválido
+	}
+
+	// Seleção da velocidade do piscar
+	switch(dropdown_velocidade_blink) {
+		case 'low':
+			velocidade_blink = 1000; // Velocidade baixa (em milissegundos)
+			break;
+		case 'middle':
+			velocidade_blink = 500; // Velocidade média
+			break;
+		case 'high':
+			velocidade_blink = 250; // Velocidade alta
+			break;	
+		default:
+			velocidade_blink = 500; // Valor padrão para a velocidade
+	}
+
+	// Geração das definições e setup para o Arduino
+	if (pinLed !== -1) {
+		Blockly.Arduino.definitions_[pinKey] = 'int ' + pinKey + ' = ' + pinLed + ';';
+		Blockly.Arduino.addSetup('io_' + pinKey, 'pinMode(' + pinKey + ', OUTPUT);', false);
+	}
+
+	var code = '';
+	if (pinLed !== -1) {
+		code = 'digitalWrite(' + pinKey + ', HIGH);\n' +
+		       'delay(' + velocidade_blink + ');\n' +
+		       'digitalWrite(' + pinKey + ', LOW);\n' +
+		       'delay(' + velocidade_blink + ');\n';
+	}
+	return code;
+};
+
+
+//*******************************************************
+//Gira Motor DC
+//*******************************************************
+
+Blockly.Arduino['girar_motor'] = function(block) {
+  var dropdown_velocidade_motor = block.getFieldValue('velocidade_motor');
+  var porta = block.getFieldValue('pino');
+  var pinKey = porta;
+  
+  Blockly.Arduino.definitions_['pino_motor_DC'] ='int pino_motor_DC = '+ pinKey +';'
+  
+  switch(dropdown_velocidade_motor) {
+		case 'low':
+			var velocidade = velocidade_baixa_motorDC;
+			break;
+		case 'middle':
+			var velocidade = velocidade_media_motorDC;
+			break;
+		case 'high':
+			var velocidade = velocidade_alta_motorDC;
+			break;	
+  }
+  var value_num = velocidade;
+
+  Blockly.Arduino.reservePin(
+      block, pinoMotorDC, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
+
+  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
+  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+
+  var code = 'analogWrite(' + pinKey + ',' + value_num + ');\n'
+  return code;
+  
+  
+
+};
+
+
+//*******************************************************
+//Para Motor DC
+//*******************************************************
+
+
+Blockly.Arduino['parar_motor'] = function(block) {
+  // TODO: Assemble Arduino into code variable.
+  var porta = block.getFieldValue('pino');
+  var pinKey = porta;
+  var value_num = '0';
+  Blockly.Arduino.definitions_['pino_motor_DC'] ='int pino_motor_DC = '+ pinKey +';'
+  
+  Blockly.Arduino.reservePin(
+      block, pinoMotorDC, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
+
+  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
+  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+
+  var code = 'analogWrite(' + pinKey + ',' + value_num + ');\n'
+  return code;
+  
+};
+
+
+//*******************************************************
+//Move Servo Motor
+//*******************************************************
+
+Blockly.Arduino['mover_servomotor'] = function(block) {
+	var porta = block.getFieldValue('pino');
+  var pinKey = porta;
+  var dropdown_posicao_ponteiro_servo = block.getFieldValue('posicao_ponteiro_servo');
+  var angulo = dropdown_posicao_ponteiro_servo;
+  var servoName = 'meu_Servo'
+  
+  Blockly.Arduino.definitions_['pino_servo_motor'] ='int pino_servo_motor = '+ pinKey +';'
+  
+  Blockly.Arduino.reservePin(
+      block, pinoServoMotor, Blockly.Arduino.PinTypes.SERVO, 'Servo Write');
+
+  Blockly.Arduino.addInclude('servo', '#include <Servo.h>');
+  Blockly.Arduino.addDeclaration('servo_' + pinKey, 'Servo ' + servoName + ';');
+
+  var setupCode = servoName + '.attach(' + pinKey + ');';
+  Blockly.Arduino.addSetup('servo_' + pinKey, setupCode, true);
+
+  var code = servoName + '.write(' + angulo + ');\n';
+  return code;
+
+};
+
+
+
+ 
+//*******************************************************
+//Escreve no LCD
+//******************************************************* 
+
+Blockly.Arduino['escrever_lcd'] = function(block) {
+	var texto = block.getFieldValue('value_texto'); // Correção aqui
+	var numero_linha = block.getFieldValue('numero_linha');
+	var lcdName = nomeLCD;
+   
+	// TODO: Assemble Arduino into code variable.
+	var posicao_cursor = '';
+	switch(numero_linha) {
+	  case '1':
+		posicao_cursor = lcdName + '.setCursor(0,0);\n';
+		break;
+	  case '2':
+		posicao_cursor = lcdName + '.setCursor(0,1);\n';
+		break;        
+	} 
+	 
+	Blockly.Arduino.addInclude('lcd', '#include <LiquidCrystal.h>');
+	
+	Blockly.Arduino.definitions_['lcd_pino_rs'] ='int lcd_pino_rs = '+ pino_rs +';';
+	Blockly.Arduino.definitions_['lcd_pino_rw'] ='int lcd_pino_rw = '+ pino_rw +';';
+	Blockly.Arduino.definitions_['lcd_pino_enable'] ='int lcd_pino_enable = '+ pino_enable +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_4'] ='int lcd_pino_dados_4 = '+ pino_dados_4 +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_5'] ='int lcd_pino_dados_5 = '+ pino_dados_5 +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_6'] ='int lcd_pino_dados_6 = '+ pino_dados_6 +';';  
+	Blockly.Arduino.definitions_['lcd_pino_dados_7'] ='int lcd_pino_dados_7 = '+ pino_dados_7 +';';  
+	
+	Blockly.Arduino.addDeclaration('lcd','LiquidCrystal ' + lcdName + '(' 
+	+ "lcd_pino_rs" + ',' + "lcd_pino_rw" + ',' + "lcd_pino_enable" + ',' + "lcd_pino_dados_4" + ',' + "lcd_pino_dados_5" + ',' + "lcd_pino_dados_6" + ',' + "lcd_pino_dados_7" +
+	');');
+	
+	var SetupCode1 = nomeSerial + '.begin(' + velocidadeSerial + ');';
+	var SetupCode2 = lcdName + '.begin(' + tamanho_linha_lcd + ',' + numero_linhas_lcd +');'; 
+	Blockly.Arduino.addSetup('lcd',SetupCode1, true);
+	Blockly.Arduino.addSetup('lcd',SetupCode2, true);
+	
+	var code = posicao_cursor + lcdName + '.print("' + texto + '");\n';
+	return code;
+  };
+
+
+//*******************************************************
+//Apaga o LCD
+//*******************************************************
+
+
+Blockly.Arduino['limpar_lcd'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var lcdName = nomeLCD
+ 
+  Blockly.Arduino.addInclude('lcd', '#include <LiquidCrystal.h>');
+
+  
+  Blockly.Arduino.definitions_['lcd_pino_rs'] ='int lcd_pino_rs = '+ pino_rs +';'
+  Blockly.Arduino.definitions_['lcd_pino_rw'] ='int lcd_pino_rw = '+ pino_rw +';'
+  Blockly.Arduino.definitions_['lcd_pino_enable'] ='int lcd_pino_enable = '+ pino_enable +';'  
+  Blockly.Arduino.definitions_['lcd_pino_dados_4'] ='int lcd_pino_dados_4 = '+ pino_dados_4 +';'  
+  Blockly.Arduino.definitions_['lcd_pino_dados_5'] ='int lcd_pino_dados_5 = '+ pino_dados_5 +';'  
+  Blockly.Arduino.definitions_['lcd_pino_dados_6'] ='int lcd_pino_dados_6 = '+ pino_dados_6 +';'  
+  Blockly.Arduino.definitions_['lcd_pino_dados_7'] ='int lcd_pino_dados_7 = '+ pino_dados_7 +';'  
+  
+  Blockly.Arduino.addDeclaration('lcd','LiquidCrystal ' + lcdName + '(' 
+  + "lcd_pino_rs" + ',' + "lcd_pino_rw" + ',' + "lcd_pino_enable" + ',' + "lcd_pino_dados_4" + ',' + "lcd_pino_dados_5" + ',' + "lcd_pino_dados_6" + ',' + "lcd_pino_dados_7" +
+  ');');
+  
+  var SetupCode1 = nomeSerial + '.begin(' + velocidadeSerial + ');';
+  var SetupCode2 = lcdName + '.begin(' + tamanho_linha_lcd + ',' + numero_linhas_lcd +');'; 
+  Blockly.Arduino.addSetup('lcd',SetupCode1, true);
+  Blockly.Arduino.addSetup('lcd',SetupCode2, true);
+  
+  var code = lcdName +'.clear();\n';
+  return code;
+
+  };
+  
+  //*******************************************************
+// Escreve no Display de 7 segmentos
+//*******************************************************
+
+Blockly.Arduino['escrever_display_7s']=function(block){
+var numeroDisplay7s =block.getFieldValue('numerosD7S');
+	switch(numeroDisplay7s) {
+		case '0':
+		    var coment = '//Escreve 0 no display 7SEG';
+			var outF = 'HIGH';
+			var outG = 'LOW';
+			var outE = 'HIGH';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+	    case '1':
+		     var coment = '//Escreve 1 no display 7SEG';
+			var outF = 'LOW';
+			var outG = 'LOW';
+			var outE = 'LOW';
+			var outD = 'LOW';
+			var outA = 'LOW';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+		case '2':
+		    var coment = '//Escreve 2 no display 7SEG';		
+			var outF = 'LOW';
+			var outG = 'HIGH';
+			var outE = 'HIGH';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'HIGH';
+			var outC = 'LOW';
+			var outPD = 'LOW';
+			break;
+		case '3':
+            var coment = '//Escreve 3 no display 7SEG';
+			var outF = 'LOW';
+			var outG = 'HIGH';
+			var outE = 'LOW';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+		case '4':
+		    var coment = '//Escreve 4 no display 7SEG';
+			var outF = 'HIGH';
+			var outG = 'HIGH';
+			var outE = 'LOW';
+			var outD = 'LOW';
+			var outA = 'LOW';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+		case '5':
+		    var coment = '//Escreve 5 no display 7SEG';
+			var outF = 'HIGH';
+			var outG = 'HIGH';
+			var outE = 'LOW';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'LOW';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+		case '6':
+		    var coment = '//Escreve 6 no display 7SEG';
+			var outF = 'HIGH';
+			var outG = 'HIGH';
+			var outE = 'HIGH';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'LOW';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+		case '7':
+		    var coment = '//Escreve 7 no display 7SEG';
+			var outF = 'LOW';
+			var outG = 'LOW';
+			var outE = 'LOW';
+			var outD = 'LOW';
+			var outA = 'HIGH';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+		case '8':
+		    var coment = '//Escreve 8 no display 7SEG';
+			var outF = 'HIGH';
+			var outG = 'HIGH';
+			var outE = 'HIGH';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break
+		case '9':
+		    var coment = '//Escreve 9 no display 7SEG';
+			var outF = 'HIGH';
+			var outG = 'HIGH';
+			var outE = 'LOW';
+			var outD = 'HIGH';
+			var outA = 'HIGH';
+			var outB = 'HIGH';
+			var outC = 'HIGH';
+			var outPD = 'LOW';
+			break;
+	}
+
+	
+	Blockly.Arduino.definitions_['pino_segmento_A'] ='int pino_segmento_A = '+ pino_segmento_A +';'
+	Blockly.Arduino.definitions_['pino_segmento_B'] ='int pino_segmento_B = '+ pino_segmento_B +';'
+	Blockly.Arduino.definitions_['pino_segmento_C'] ='int pino_segmento_C = '+ pino_segmento_C +';'
+	Blockly.Arduino.definitions_['pino_segmento_D'] ='int pino_segmento_D = '+ pino_segmento_D +';'
+	Blockly.Arduino.definitions_['pino_segmento_E'] ='int pino_segmento_E = '+ pino_segmento_E +';'
+	Blockly.Arduino.definitions_['pino_segmento_F'] ='int pino_segmento_F = '+ pino_segmento_F +';'
+	Blockly.Arduino.definitions_['pino_segmento_G'] ='int pino_segmento_G = '+ pino_segmento_G +';'	
+	Blockly.Arduino.definitions_['pino_ponto_decimal'] ='int pino_ponto_decimal = '+ pino_ponto_decimal +';'	
+		
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_F , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_G , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_E , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_D , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_A , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_B , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_C , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_ponto_decimal, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+
+  var pinSetupCodeF = 'pinMode(' + "pino_segmento_F" + ', OUTPUT);';
+  var pinSetupCodeG = 'pinMode(' + "pino_segmento_G" + ', OUTPUT);';
+  var pinSetupCodeE = 'pinMode(' + "pino_segmento_E" + ', OUTPUT);';
+  var pinSetupCodeD = 'pinMode(' + "pino_segmento_D" + ', OUTPUT);';
+  var pinSetupCodeA = 'pinMode(' + "pino_segmento_A" + ', OUTPUT);';
+  var pinSetupCodeB = 'pinMode(' + "pino_segmento_B" + ', OUTPUT);';
+  var pinSetupCodeC = 'pinMode(' + "pino_segmento_C" + ', OUTPUT);';
+  var pinSetupCodePD = 'pinMode(' + "pino_ponto_decimal" + ', OUTPUT);';
+  
+									
+  Blockly.Arduino.addSetup('io_' + pino_segmento_F, pinSetupCodeF, true);
+  Blockly.Arduino.addSetup('io_' + pino_segmento_G, pinSetupCodeG, true);
+  Blockly.Arduino.addSetup('io_' + pino_segmento_E, pinSetupCodeE, true);
+  Blockly.Arduino.addSetup('io_' + pino_segmento_D, pinSetupCodeD, true);
+  Blockly.Arduino.addSetup('io_' + pino_segmento_A, pinSetupCodeA, true);
+  Blockly.Arduino.addSetup('io_' + pino_segmento_B, pinSetupCodeB, true);
+  Blockly.Arduino.addSetup('io_' + pino_segmento_C, pinSetupCodeC, true);
+  Blockly.Arduino.addSetup('io_' + pino_ponto_decimal, pinSetupCodePD, true);
+
+  
+  //Código
+  var code = coment +'\n'
+            + 'digitalWrite(' + "pino_segmento_F" + ',' + outF + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_G" + ',' + outG + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_E" + ',' + outE + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_D" + ',' + outD + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_A" + ',' + outA + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_B" + ',' + outB + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_C" + ',' + outC + ');\n'
+			+ 'digitalWrite(' + "pino_ponto_decimal" + ',' + outPD + ');\n';
+			
+  return code;
+ 
+};
+
+//*******************************************************
+// Linpa Display de 7 segmentos
+//*******************************************************
+
+Blockly.Arduino['limpar_display_7s']=function(block){
+
+	var outF = 'LOW';
+	var outG = 'LOW';
+	var outE = 'LOW';
+	var outD = 'LOW';
+	var outA = 'LOW';
+	var outB = 'LOW';
+	var outC = 'LOW';
+	var outPD = 'LOW';
+
+	Blockly.Arduino.definitions_['pino_segmento_A'] ='int pino_segmento_A = '+ pino_segmento_A +';'
+	Blockly.Arduino.definitions_['pino_segmento_B'] ='int pino_segmento_B = '+ pino_segmento_B +';'
+	Blockly.Arduino.definitions_['pino_segmento_C'] ='int pino_segmento_C = '+ pino_segmento_C +';'
+	Blockly.Arduino.definitions_['pino_segmento_D'] ='int pino_segmento_D = '+ pino_segmento_D +';'
+	Blockly.Arduino.definitions_['pino_segmento_E'] ='int pino_segmento_E = '+ pino_segmento_E +';'
+	Blockly.Arduino.definitions_['pino_segmento_F'] ='int pino_segmento_F = '+ pino_segmento_F +';'
+	Blockly.Arduino.definitions_['pino_segmento_G'] ='int pino_segmento_G = '+ pino_segmento_G +';'	
+	Blockly.Arduino.definitions_['pino_ponto_decimal'] ='int pino_ponto_decimal = '+ pino_ponto_decimal +';'	
+		
+	
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_F , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_G , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_E , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_D , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_A , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_B , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_segmento_C , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+	Blockly.Arduino.reservePin(
+		  block, pino_ponto_decimal, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+
+    var pinSetupCodeF = 'pinMode(' + "pino_segmento_F" + ', OUTPUT);';
+    var pinSetupCodeG = 'pinMode(' + "pino_segmento_G" + ', OUTPUT);';
+    var pinSetupCodeE = 'pinMode(' + "pino_segmento_E" + ', OUTPUT);';
+    var pinSetupCodeD = 'pinMode(' + "pino_segmento_D" + ', OUTPUT);';
+    var pinSetupCodeA = 'pinMode(' + "pino_segmento_A" + ', OUTPUT);';
+    var pinSetupCodeB = 'pinMode(' + "pino_segmento_B" + ', OUTPUT);';
+    var pinSetupCodeC = 'pinMode(' + "pino_segmento_C" + ', OUTPUT);';
+    var pinSetupCodePD = 'pinMode(' + "pino_ponto_decimal" + ', OUTPUT);';
+  
+									
+    Blockly.Arduino.addSetup('io_' + pino_segmento_F, pinSetupCodeF, true);
+    Blockly.Arduino.addSetup('io_' + pino_segmento_G, pinSetupCodeG, true);
+    Blockly.Arduino.addSetup('io_' + pino_segmento_E, pinSetupCodeE, true);
+    Blockly.Arduino.addSetup('io_' + pino_segmento_D, pinSetupCodeD, true);
+    Blockly.Arduino.addSetup('io_' + pino_segmento_A, pinSetupCodeA, true);
+    Blockly.Arduino.addSetup('io_' + pino_segmento_B, pinSetupCodeB, true);
+    Blockly.Arduino.addSetup('io_' + pino_segmento_C, pinSetupCodeC, true);
+    Blockly.Arduino.addSetup('io_' + pino_ponto_decimal, pinSetupCodePD, true);
+
+    var coment = '//Apaga o Display de 7SEG';
+ 
+   //Código
+    var code = coment + '\n'
+            + 'digitalWrite(' + "pino_segmento_F" + ',' + outF + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_G" + ',' + outG + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_E" + ',' + outE + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_D" + ',' + outD + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_A" + ',' + outA + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_B" + ',' + outB + ');\n'
+			+ 'digitalWrite(' + "pino_segmento_C" + ',' + outC + ');\n'
+			+ 'digitalWrite(' + "pino_ponto_decimal" + ',' + outPD + ');\n';
+			
+    return code;
+ 
+};
+
+
+//*******************************************************
+// LED RGB
+//*******************************************************
+
+Blockly.Arduino['led_rgb'] = function(block) {
+var colour_luzvermelha = block.getFieldValue('luzVermelha');
+var colour_luzverde = block.getFieldValue('luzVerde');
+var colour_luzazul = block.getFieldValue('luzAzul');
+
+//Define se a cor vai estar acesa ou apagada
+
+switch(colour_luzvermelha) {
+		case '#ff0000':
+			var val_luzvermelha = '255';
+			break;
+	    case '#ffffff':
+			var val_luzvermelha = '0';
+			break;
+}
+
+switch(colour_luzverde) {
+		case '#00ff00':
+			var val_luzverde = '255';
+			break;
+	    case '#ffffff':
+			var val_luzverde = '0';
+			break;
+}
+
+switch(colour_luzazul) {
+		case '#0000ff':
+			var val_luzazul = '255';
+			break;
+	    case '#ffffff':
+			var val_luzazul = '0';
+			break;
+}
+
+
+  
+//SETUP
+  
+Blockly.Arduino.definitions_['pino_rgb_vermelho'] ='int pino_rgb_vermelho = '+ pino_rgb_vermelho +';'  
+Blockly.Arduino.definitions_['pino_rgb_verde'] ='int pino_rgb_verde = '+ pino_rgb_verde +';'   
+Blockly.Arduino.definitions_['pino_rgb_azul'] ='int pino_rgb_azul = '+ pino_rgb_azul +';'  
+
+Blockly.Arduino.reservePin(
+      block, pino_rgb_vermelho, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+Blockly.Arduino.reservePin(
+      block, pino_rgb_verde, Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+Blockly.Arduino.reservePin(
+      block, pino_rgb_azul , Blockly.Arduino.PinTypes.OUTPUT, 'Digital Write');
+  
+  
+  var pinSetupCodeVermelho = 'pinMode(' + "pino_rgb_vermelho" + ', OUTPUT);';
+  var pinSetupCodeVerde = 'pinMode(' + "pino_rgb_verde" + ', OUTPUT);';
+  var pinSetupCodeAzul = 'pinMode(' + "pino_rgb_azul" + ', OUTPUT);';
+
+									
+  Blockly.Arduino.addSetup('io_' + "pino_rgb_vermelho", pinSetupCodeVermelho, false);
+  Blockly.Arduino.addSetup('io_' + "pino_rgb_verde", pinSetupCodeVerde, false);
+  Blockly.Arduino.addSetup('io_' + "pino_rgb_azul", pinSetupCodeAzul, false);
+
+   //Código
+ 
+  var code = 'analogWrite(' + "pino_rgb_vermelho" + ',' + val_luzvermelha + ');\n'
+			+ 'analogWrite(' + "pino_rgb_verde" + ',' + val_luzverde  + ');\n'
+			+ 'analogWrite(' + "pino_rgb_azul" + ',' + val_luzazul  + ');\n';
+
+ return code;
+ 
+};
+
 
 /**
- * Helper function to generate an array of pins (each an array of length 2) for
- * the digital IO.
- * @param {!integer} pinStart Start number for the IOs pin list to generate.
- * @param {!integer} pinEnd Last inclusive number for the list to generate.
- * @return {!array} Two dimensional array with the name and value for the
- *     digital IO pins.
- */
-Blockly.Arduino.Boards.generateDigitalIo = function(pinStart, pinEnd) {
-  var digitalIo = [];
-  for (var i = pinStart; i < (pinEnd + 1); i++) {
-    digitalIo.push([i.toString(), i.toString()]);
-  }
-  return digitalIo;
+//*******************************************************
+//Tocar nota no Buzzer
+//*******************************************************
+Blockly.Arduino['tocar_nota_buzzer'] = function(block) {
+  var nota_musical = block.getFieldValue('nota_musical');
+  var pinKey = "pino_buzzer";
+ 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pino_buzzer +';' 
+  
+  Blockly.Arduino.reservePin(
+      block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
+
+  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
+  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+
+  var code = 'tone('+ pinKey +','+nota_musical+');\n';
+  
+  return code;
 };
 
-/**
- * Helper function to generate an array of pins (each an array of length 2) for
- * the analogue IO.
- * @param {!integer} pinStart Start number for the IOs pin list to generate.
- * @param {!integer} pinEnd Last inclusive number for the list to generate.
- * @return {!array} Two dimensional array with the name and value for the
- *     analogue IO pins.
- */
-Blockly.Arduino.Boards.generateAnalogIo = function(pinStart, pinEnd) {
-  var analogIo = [];
-  for (var i = pinStart; i < (pinEnd + 1); i++) {
-    analogIo.push(['A' + i.toString(), 'A' + i.toString()]);
-  }
-  return analogIo;
+**/
+//*******************************************************
+//Tocar nota no Buzzer
+//*******************************************************
+
+function Seleciona_frequencia_nota(nota,altura,acidente){
+
+var frequencia = 262;
+
+	switch(altura) {
+		case '3':
+			switch (nota){
+				case 'do':
+					switch (acidente){			     
+						case 'b': frequencia = 123;break;
+						case 'n': frequencia = 131;break;					
+						case 's': frequencia = 139;break;			   
+					}
+				break;
+				case 're':
+					switch (acidente){			     
+						case 'b': frequencia = 139;break;
+						case 'n': frequencia = 147;break;					
+						case 's': frequencia = 156;break;			   
+					}
+				break;
+				case 'mi':
+					switch (acidente){			     
+						case 'b': frequencia = 156;break;
+						case 'n': frequencia = 165;break;					
+						case 's': frequencia = 175;break;			   
+					}
+				break;				
+				case 'fa':
+					switch (acidente){			     
+						case 'b': frequencia = 165;break;
+						case 'n': frequencia = 175;break;					
+						case 's': frequencia = 185;break;			   
+					}
+				break;
+				case 'sol':
+					switch (acidente){			     
+						case 'b': frequencia = 185;break;
+						case 'n': frequencia = 196;break;					
+						case 's': frequencia = 208;break;			   
+					}
+				break;
+				case 'la':
+					switch (acidente){			     
+						case 'b': frequencia = 208;break;
+						case 'n': frequencia = 220;break;					
+						case 's': frequencia = 233;break;			   
+					}
+				break;
+				case 'si':
+					switch (acidente){			     
+						case 'b': frequencia = 233;break;
+						case 'n': frequencia = 247;break;					
+						case 's': frequencia = 262;break;			   
+					}
+				break;	
+			}
+		break;	
+		case '4':
+			switch (nota){
+				case 'do':
+					switch (acidente){			     
+						case 'b': frequencia = 247;break;
+						case 'n': frequencia = 262;break;					
+						case 's': frequencia = 277;break;			   
+					}
+				break;
+				case 're':
+					switch (acidente){			     
+						case 'b': frequencia = 277;break;
+						case 'n': frequencia = 294;break;					
+						case 's': frequencia = 311;break;			   
+					}
+				break;
+				case 'mi':
+					switch (acidente){			     
+						case 'b': frequencia = 311;break;
+						case 'n': frequencia = 330;break;					
+						case 's': frequencia = 349;break;			   
+					}
+				break;				
+				case 'fa':
+					switch (acidente){			     
+						case 'b': frequencia = 330;break;
+						case 'n': frequencia = 349;break;					
+						case 's': frequencia = 370;break;			   
+					}
+				break;
+				case 'sol':
+					switch (acidente){			     
+						case 'b': frequencia = 370;break;
+						case 'n': frequencia = 392;break;					
+						case 's': frequencia = 415;break;			   
+					}
+				break;
+				case 'la':
+					switch (acidente){			     
+						case 'b': frequencia = 415;break;
+						case 'n': frequencia = 440;break;					
+						case 's': frequencia = 466;break;			   
+					}
+				break;
+				case 'si':
+					switch (acidente){			     
+						case 'b': frequencia = 499;break;
+						case 'n': frequencia = 494;break;					
+						case 's': frequencia = 523;break;			   
+					}
+				break;					
+			}			
+		break;
+		case '5':
+			switch (nota){
+				case 'do':
+					switch (acidente){			     
+						case 'b': frequencia = 494;break;
+						case 'n': frequencia = 523;break;					
+						case 's': frequencia = 554;break;			   
+					}
+				break;
+				case 're':
+					switch (acidente){			     
+						case 'b': frequencia = 554;break;
+						case 'n': frequencia = 587;break;					
+						case 's': frequencia = 622;break;			   
+					}
+				break;
+				case 'mi':
+					switch (acidente){			     
+						case 'b': frequencia = 622;break;
+						case 'n': frequencia = 659;break;					
+						case 's': frequencia = 698;break;			   
+					}
+				break;				
+				case 'fa':
+					switch (acidente){			     
+						case 'b': frequencia = 659;break;
+						case 'n': frequencia = 698;break;					
+						case 's': frequencia = 740;break;			   
+					}
+				break;
+				case 'sol':
+					switch (acidente){			     
+						case 'b': frequencia = 740;break;
+						case 'n': frequencia = 784;break;					
+						case 's': frequencia = 831;break;			   
+					}
+				break;
+				case 'la':
+					switch (acidente){			     
+						case 'b': frequencia = 831;break;
+						case 'n': frequencia = 880;break;					
+						case 's': frequencia = 932;break;			   
+					}
+				break;
+				case 'si':
+					switch (acidente){			     
+						case 'b': frequencia = 932;break;
+						case 'n': frequencia = 988;break;					
+						case 's': frequencia = 1047;break;			   
+					}
+				break;		
+			}
+		break;
+	}		
+return frequencia;	
+	
+}
+
+Blockly.Arduino['tocar_nota_buzzer'] = function(block) {
+  var nota_musical = block.getFieldValue('nota_musical');
+  var altura = block.getFieldValue('altura'); 
+  var acidente = block.getFieldValue('acidente'); 
+  var porta = block.getFieldValue('pino');
+  
+  var pinKey = porta;
+ 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pinKey +';' 
+  
+  Blockly.Arduino.reservePin(
+      block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
+
+  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
+  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+  
+
+  var code = 'noTone('+ pinKey + ');' + '\n' + 'tone('+ pinKey +','+ Seleciona_frequencia_nota(nota_musical,altura,acidente) +');\n' ;
+  
+  return code;
 };
 
-/**
- * Creates a new Board Profile copying all the attributes from an existing
- * profile, with the exception of the name, and optionally the description and
- * compiler flag.
- * @param {!string} name_ Mandatory new name of the new board profile.
- * @param {string=} description Optional new description of the new profile.
- * @param {string=} compilerFlag Optional new description of the new profile.
- * @return {!Object} Duplicated object with the different argument data.
- */
-Blockly.Arduino.Boards.duplicateBoardProfile =
-    function(originalBoard, name_, description, compilerFlag) {
-  return {
-    name: name_,
-    description: description || originalBoard.description,
-    compilerFlag: compilerFlag || originalBoard.compilerFlag,
-    analogPins: originalBoard.analogPins,
-    digitalPins: originalBoard.digitalPins,
-    pwmPins: originalBoard.pwmPins,
-    serial: originalBoard.serial,
-    serialPins: originalBoard.serialPins,
-    serialSpeed: originalBoard.serialSpeed,
-    spi: originalBoard.spi,
-    spiPins: originalBoard.spiPins,
-    spiClockDivide: originalBoard.spiClockDivide,
-    i2c: originalBoard.i2c,
-    i2cPins: originalBoard.i2cPins,
-    i2cSpeed: originalBoard.i2cSpeed,
-    builtinLed: originalBoard.builtinLed,
-    interrupt: originalBoard.interrupt
-  }
+
+Blockly.Arduino['parar_som_buzzer'] = function(block) {
+  
+	var porta = block.getFieldValue('pino');
+  
+	var pinKey = porta;
+ 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pinKey +';' 
+  
+  Blockly.Arduino.reservePin(
+      block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
+
+  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
+  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+  
+
+  var code = 'noTone('+ pinKey + ');\n' ;
+  
+  return code;
+};
+//*******************************************************
+//Tocar sirente no Buzzer
+//*******************************************************
+Blockly.Arduino['tocar_sirene_buzzer'] = function(block) {
+  var velocidade = block.getFieldValue('velocidade');
+  var porta = block.getFieldValue('pino');
+  
+  var pinKey = porta;
+ 
+  Blockly.Arduino.definitions_['pino_buzzer'] ='int pino_buzzer = '+ pinKey +';' 
+  
+  Blockly.Arduino.reservePin(
+      block, pino_buzzer, Blockly.Arduino.PinTypes.OUTPUT, 'Analogue Write');
+
+  var pinSetupCode = 'pinMode(' + pinKey + ', OUTPUT);';
+  Blockly.Arduino.addSetup('io_' + pinKey, pinSetupCode, false);
+
+  var code = ' for (int frequencia = 150; frequencia < 1800; frequencia += 1)\n' +  
+			 ' {\n' + 
+			 '  tone('+pinKey+', frequencia,'+tempo_sirene+');\n' +  
+			 '  delay('+velocidade+');\n' +  
+			 ' }\n' + 
+			  ' for (int frequencia = 1800; frequencia > 150; frequencia -= 1)\n' +  
+			 ' {\n' + 
+			 '  tone('+pinKey+', frequencia,'+tempo_sirene+');\n' +  
+			 '  delay('+velocidade+');\n' +  
+			 ' }\n';
+  return code;
 };
 
-/** Object to contain all Arduino board profiles. */
-Blockly.Arduino.Boards.profiles = new Object();
 
-/** Arduino Uno board profile. */
-Blockly.Arduino.Boards.profiles.uno = {
-  name: 'Arduino Uno',
-  description: 'Arduino Uno standard compatible board',
-  compilerFlag: 'arduino:avr:uno',
-  analogPins: Blockly.Arduino.Boards.generateAnalogIo(0, 5),
-  digitalPins: Blockly.Arduino.Boards.generateDigitalIo(0, 13).concat(
-                   Blockly.Arduino.Boards.generateAnalogIo(0, 5)),
-  pwmPins: [['3', '3'], ['5', '5'], ['6', '6'], ['9', '9'], ['10', '10'],
-            ['11', '11']],
-  serial: [['serial', 'Serial']],
-  serialPins: { Serial: [['RX', '0'], ['TX', '1']] },
-  serialSpeed: [['300', '300'], ['600', '600'], ['1200', '1200'],
-                ['2400', '2400'], ['4800', '4800'], ['9600', '9600'],
-                ['14400', '14400'], ['19200', '19200'], ['28800', '28800'],
-                ['31250', '31250'], ['38400', '38400'], ['57600', '57600'],
-                ['115200', '115200']],
-  spi: [['SPI', 'SPI']],
-  spiPins: { SPI: [['MOSI', '11'], ['MISO', '12'], ['SCK', '13']] },
-  spiClockDivide: [['2 (8MHz)', 'SPI_CLOCK_DIV2'],
-                   ['4 (4MHz)', 'SPI_CLOCK_DIV4'],
-                   ['8 (2MHz)', 'SPI_CLOCK_DIV8'],
-                   ['16 (1MHz)', 'SPI_CLOCK_DIV16'],
-                   ['32 (500KHz)', 'SPI_CLOCK_DIV32'],
-                   ['64 (250KHz)', 'SPI_CLOCK_DIV64'],
-                   ['128 (125KHz)', 'SPI_CLOCK_DIV128']],
-  i2c: [['I2C', 'Wire']],
-  i2cPins: { Wire: [['SDA', 'A4'], ['SCL', 'A5']] },
-  i2cSpeed: [['100kHz', '100000L'], ['400kHz', '400000L']],
-  builtinLed: [['BUILTIN_1', '13']],
-  interrupt: [['interrupt0', '2'], ['interrupt1', '3']]
-};
 
-/** Arduino Nano board profile (ATmega328p). */
-Blockly.Arduino.Boards.profiles.nano_328 = {
-  name: 'Arduino Nano 328',
-  description: 'Arduino Nano with ATmega328 board',
-  compilerFlag: 'arduino:avr:nano:cpu=atmega328',
-  analogPins: Blockly.Arduino.Boards.generateAnalogIo(0, 7),
-  digitalPins: Blockly.Arduino.Boards.generateDigitalIo(0, 13).concat(
-                   Blockly.Arduino.Boards.generateAnalogIo(0, 7)),
-  pwmPins: Blockly.Arduino.Boards.profiles.uno.pwmPins,
-  serial: Blockly.Arduino.Boards.profiles.uno.serial,
-  serialPins: Blockly.Arduino.Boards.profiles.uno.serialPins,
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serialSpeed,
-  spi: Blockly.Arduino.Boards.profiles.uno.spi,
-  spiPins: Blockly.Arduino.Boards.profiles.uno.spiPins,
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: Blockly.Arduino.Boards.profiles.uno.i2c,
-  i2cPins: Blockly.Arduino.Boards.profiles.uno.i2cPins,
-  i2cSpeed: Blockly.Arduino.Boards.profiles.uno.i2cSpeed,
-  builtinLed: Blockly.Arduino.Boards.profiles.uno.builtinLed,
-  interrupt: Blockly.Arduino.Boards.profiles.uno.interrupt
-};
-Blockly.Arduino.Boards.profiles.nano_168 =
-    Blockly.Arduino.Boards.duplicateBoardProfile(
-        Blockly.Arduino.Boards.profiles.nano_328,
-        'Arduino Nano 168',
-        'Arduino Nano with ATmega168 compatible board',
-        'arduino:avr:nano:cpu=atmega168');
-
-/** Arduino Duemilanove boards profile (ATmega168p, ATmega328p). */
-Blockly.Arduino.Boards.profiles.duemilanove_168p = {
-  name: 'Arduino Nano 168p',
-  description: 'Arduino Duemilanove with ATmega168p compatible board',
-  compilerFlag: 'arduino:avr:diecimila:cpu=atmega168',
-  analogPins: Blockly.Arduino.Boards.profiles.uno.analogPins,
-  digitalPins: Blockly.Arduino.Boards.profiles.uno.digitalPins,
-  pwmPins: Blockly.Arduino.Boards.profiles.uno.pwmPins,
-  serial: Blockly.Arduino.Boards.profiles.uno.serial,
-  serialPins: Blockly.Arduino.Boards.profiles.uno.serialPins,
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serialSpeed,
-  spi: Blockly.Arduino.Boards.profiles.uno.spi,
-  spiPins: Blockly.Arduino.Boards.profiles.uno.spiPins,
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: Blockly.Arduino.Boards.profiles.uno.i2c,
-  i2cPins: Blockly.Arduino.Boards.profiles.uno.i2cPins,
-  i2cSpeed: Blockly.Arduino.Boards.profiles.uno.i2cSpeed,
-  builtinLed: Blockly.Arduino.Boards.profiles.uno.builtinLed,
-  interrupt: Blockly.Arduino.Boards.profiles.uno.interrupt
-};
-Blockly.Arduino.Boards.profiles.duemilanove_328p =
-    Blockly.Arduino.Boards.duplicateBoardProfile(
-        Blockly.Arduino.Boards.profiles.duemilanove_168p,
-        'Arduino Duemilanove 328p',
-        'Arduino Duemilanove with ATmega328p compatible board',
-        'arduino:avr:diecimila');
-
-/** Arduino Mega board profile. */
-Blockly.Arduino.Boards.profiles.mega = {
-  name: 'Arduino Mega',
-  description: 'Arduino Mega-compatible board',
-  compilerFlag: 'arduino:avr:mega',
-  analogPins: Blockly.Arduino.Boards.generateAnalogIo(0, 15),
-  //TODO: Check if the Mega can use analogue pins as digital, it would be
-  //      logical but it is not clear on the arduino.cc website
-  digitalPins: Blockly.Arduino.Boards.generateDigitalIo(0, 53),
-  pwmPins: Blockly.Arduino.Boards.generateDigitalIo(2, 13).concat(
-               Blockly.Arduino.Boards.generateDigitalIo(44, 46)),
-  serial: [['serial', 'Serial'], ['serial_1', 'Serial1'],
-           ['serial_2', 'Serial2'], ['serial_3', 'Serial3']],
-  serialPins: {
-    Serial: [['TX', '0'], ['RX', '1']],
-    Serial1: [['TX', '18'], ['TX', '19']],
-    Serial2: [['TX', '16'], ['TX', '17']],
-    Serial3: [['TX', '14'], ['TX', '15']]
-  },
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serialSpeed,
-  spi: [['SPI', 'SPI']],
-  spiPins: { SPI: [['MOSI', '51'], ['MISO', '50'], ['SCK', '52']] },
-  //TODO: confirm the clock divides are the same for the DUE and UNO
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: [['I2C', 'Wire']],
-  i2cPins: { Wire: [['SDA', '20'], ['SCL', '21']] },
-  i2cSpeed: [['100kHz', '100000L'], ['400kHz', '400000L']],
-  builtinLed: Blockly.Arduino.Boards.profiles.uno.builtinLed,
-  interrupt: [['interrupt0', '2'], ['interrupt1', '3'], ['interrupt2', '21'],
-              ['interrupt3', '20'], ['interrupt4', '19'], ['interrupt5', '18']]
-};
-
-/** Arduino Leonardo board profile. */
-Blockly.Arduino.Boards.profiles.leonardo = {
-  name: 'Arduino Leonardo',
-  description: 'Arduino Leonardo-compatible board',
-  compilerFlag: 'arduino:avr:leonardo',
-  analogPins: Blockly.Arduino.Boards.generateAnalogIo(0, 5).concat(
-                  [['A6', '4'], ['A7', '6'], ['A8', '8'], ['A9', '9'],
-                   ['A10', '10'], ['A11', '12']]),
-  digitalPins: Blockly.Arduino.Boards.generateDigitalIo(0, 13).concat(
-                   Blockly.Arduino.Boards.generateAnalogIo(0, 5)),
-  pwmPins: Blockly.Arduino.Boards.profiles.uno.pwmPins.concat([['13', '13']]),
-  serial: Blockly.Arduino.Boards.profiles.uno.serial,
-  serialPins: Blockly.Arduino.Boards.profiles.uno.serialPins,
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serialSpeed,
-  spi: [['SPI', 'SPI']],
-  spiPins: { SPI: [['MOSI', 'ICSP-4'], ['MISO', 'ICSP-1'], ['SCK', 'ICSP-3']] },
-  //TODO: confirm the clock divides are the same for the Leonardo and UNO
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: [['I2C', 'Wire']],
-  i2cPins: { Wire: [['SDA', '2'], ['SCL', '3']] },
-  i2cSpeed: Blockly.Arduino.Boards.profiles.uno.i2cSpeed,
-  builtinLed: Blockly.Arduino.Boards.profiles.uno.builtinLed,
-  interrupt: [['interrupt0', '3'], ['interrupt1', '2'], ['interrupt2', '0'],
-              ['interrupt3', '1'], ['interrupt4', '17']]
-};
-
-/** Arduino Yun board processor and profile is identical to Leonardo. */
-Blockly.Arduino.Boards.profiles.yun =
-    Blockly.Arduino.Boards.duplicateBoardProfile(
-        Blockly.Arduino.Boards.profiles.leonardo,
-        'Arduino Yun',
-        'Arduino Yun compatible board');
-
-/** Atmel Xplained mini boards profile (atmega328p, atmega328pb, atmega168pb).*/
-Blockly.Arduino.Boards.profiles.atmel_atmega328p_xplained_mini = {
-  name: 'Atmel atmega328p Xplained mini',
-  description: 'Atmel Xplained mini board with atmega328p (Uno compatible)',
-  compilerFlag: 'atmel:avr:atmega328p_xplained_mini',
-  analogPins: Blockly.Arduino.Boards.profiles.uno.analogPins,
-  digitalPins: Blockly.Arduino.Boards.profiles.uno.digitalPins.concat(
-      [['20', '20']]),
-  pwmPins: Blockly.Arduino.Boards.profiles.uno.pwmPins,
-  serial: Blockly.Arduino.Boards.profiles.uno.serial,
-  serialPins: Blockly.Arduino.Boards.profiles.uno.serialPins,
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serialSpeed,
-  spi: Blockly.Arduino.Boards.profiles.uno.spi,
-  spiPins: Blockly.Arduino.Boards.profiles.uno.spiPins,
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: Blockly.Arduino.Boards.profiles.uno.i2c,
-  i2cPins: Blockly.Arduino.Boards.profiles.uno.i2cPins,
-  i2cSpeed: Blockly.Arduino.Boards.profiles.uno.i2cSpeed,
-  builtinLed: [['BUILTIN_LED', '13']],
-  interrupt: Blockly.Arduino.Boards.profiles.uno.interrupt,
-  builtinButton: [['BUILTIN_BUTTON', '20']]
-};
-Blockly.Arduino.Boards.profiles.atmel_atmega328pb_xplained_mini =
-    Blockly.Arduino.Boards.duplicateBoardProfile(
-        Blockly.Arduino.Boards.profiles.atmel_atmega328p_xplained_mini,
-        'Atmel atmega328pb Xplained mini',
-        'Atmel Xplained mini board with atmega328pb (Arduino Uno compatible)',
-        'atmel:avr:atmega328pb_xplained_mini');
-Blockly.Arduino.Boards.profiles.atmel_atmega168pb_xplained_mini =
-    Blockly.Arduino.Boards.duplicateBoardProfile(
-        Blockly.Arduino.Boards.profiles.atmel_atmega328p_xplained_mini,
-        'Atmel atmega168pb Xplained mini',
-        'Atmel Xplained mini board with atmega168pb (Arduino Uno compatible)',
-        'atmel:avr:atmega168pb_xplained_mini');
-
-/** ESP8266 for the Adafruit Huzzah. */
-Blockly.Arduino.Boards.profiles.esp8266_huzzah = {
-  name: 'Adafruit Feather HUZZAH',
-  description: 'Adafruit HUZZAH ESP8266 compatible board',
-  compilerFlag: 'esp8266:esp8266:generic',
-  analogPins: [['A0', 'A0']],
-  digitalPins: [['0', '0'], ['2', '2'], ['4', '4'], ['5', '5'], ['12', '12'],
-                ['13', '13'], ['14', '14'], ['15', '15'], ['16', '16']],
-  pwmPins: [['2', '2']],
-  serial: [['serial', 'Serial']],
-  serialPins: { Serial: [['RX', 'RX'], ['TX', 'TX']] },
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serial,
-  spi: [['SPI', 'SPI']],
-  spiPins: { SPI: [['MOSI', '13'], ['MISO', '12'], ['SCK', '14']] },
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: [['I2C', 'Wire']],
-  i2cPins: { Wire: [['SDA', '4'], ['SCL', '5']] },
-  i2cSpeed: Blockly.Arduino.Boards.profiles.uno.i2cSpeed,
-  builtinLed: [['BUILTIN_1', '0']],
-  interrupt: [['interrupt0', '2'], ['interrupt1', '3']]
-};
-
-/** ESP8266 for the Wemos D1 R2. */
-Blockly.Arduino.Boards.profiles.esp8266_wemos_d1 = {
-  name: 'Wemos D1',
-  description: 'Wemos D1 R2 compatible board',
-  compilerFlag: 'esp8266:esp8266:generic',
-  analogPins: [['A0', 'A0']],
-  digitalPins: [['D0', 'D0'], ['D1', 'D1'], ['D2', 'D2'], ['D3', 'D3'],
-                ['D4', 'D4'], ['D5', 'D5'], ['D6', 'D7'], ['D8', 'D8']],
-  pwmPins:  [['D1', 'D1'], ['D2', 'D2'], ['D3', 'D3'], ['D4', 'D4'],
-             ['D5', 'D5'], ['D6', 'D7'], ['D8', 'D8']],
-  serial: [['serial', 'Serial']],
-  serialPins: { Serial: [['RX', 'RX'], ['TX', 'TX']] },
-  serialSpeed: Blockly.Arduino.Boards.profiles.uno.serialSpeed,
-  spi: [['SPI', 'SPI']],
-  spiPins: { SPI: [['MOSI', 'D7'], ['MISO', 'D6'], ['SCK', 'D5']] },
-  spiClockDivide: Blockly.Arduino.Boards.profiles.uno.spiClockDivide,
-  i2c: [['I2C', 'Wire']],
-  i2cPins: { Wire: [['SDA', 'D2'], ['SCL', 'D1']] },
-  i2cSpeed: Blockly.Arduino.Boards.profiles.uno.i2cSpeed,
-  builtinLed: [['BUILTIN_1', 'D4']],
-  interrupt: [['D0', 'D0'], ['D1', 'D1'], ['D2', 'D2'], ['D3', 'D3'],
-              ['D4', 'D4'], ['D5', 'D5'], ['D6', 'D7'], ['D8', 'D8']]
-};
-
-/** Set default profile to Arduino standard-compatible board */
-Blockly.Arduino.Boards.selected = Blockly.Arduino.Boards.profiles.uno;
-
-/**
- * Changes the Arduino board profile selected, which trigger a refresh of the
- * blocks that use the profile.
- * @param {Blockly.Workspace} workspace Workspace to trigger the board change.
- * @param {string} newBoard Name of the new profile to set.
- */
-Blockly.Arduino.Boards.changeBoard = function(workspace, newBoard) {
-  if (Blockly.Arduino.Boards.profiles[newBoard] === undefined) {
-    console.log('Tried to set non-existing Arduino board: ' + newBoard);
-    return;
-  }
-  Blockly.Arduino.Boards.selected = Blockly.Arduino.Boards.profiles[newBoard];
-  // Update the pin out of all the blocks that uses them
-  var blocks = workspace.getAllBlocks();
-  for (var i = 0; i < blocks.length; i++) {
-    var updateFields = blocks[i].updateFields;
-    if (updateFields) {
-      updateFields.call(blocks[i]);
-    }
-  }
-};
-
-/**
- * Refreshes the contents of a block Field Dropdown.
- * This is use to refresh the blocks after the board profile has been changed.
- * @param {!Blockly.Block} block Generated code.
- * @param {!string} fieldName Name of the block FieldDropdown to refresh.
- * @param {!string} boardKey Name of the board profile property to fetch.
- */
-Blockly.Arduino.Boards.refreshBlockFieldDropdown =
-    function(block, fieldName, boardKey) {
-  var field = block.getField(fieldName);
-  var fieldValue = field.getValue();
-  var dataArray = Blockly.Arduino.Boards.selected[boardKey];
-  field.menuGenerator_ = dataArray;
-
-  var currentValuePresent = false;
-  for (var i = 0; i < dataArray.length; i++) {
-    if (fieldValue == dataArray[i][1]) {
-      currentValuePresent = true;
-    }
-  }
-  // If the old value is not present any more, add a warning to the block.
-  if (!currentValuePresent) {
-    block.setWarningText(
-        'The old pin value ' + fieldValue + ' is no longer available.', 'bPin');
-  } else {
-    block.setWarningText(null, 'bPin');
-  }
-};
+ 
+ 
